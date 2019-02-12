@@ -8,18 +8,20 @@
 
 
 .main{
-	height: 100vh;
-	width: 100%;
 
+	width: 100%;
+	font-family: 'Sarabun', sans-serif;
 }
 
-
+/* Header */
 .header{
 	display: flex;
+	
 }
 
 a{
 	text-decoration: none;
+	color: white;
 }
 
 .link-home, .link-more, .link-about, .link-info{
@@ -31,9 +33,72 @@ a{
 	width: 25%;
 }
 
+/* Banner */
+
 img{
 	max-width: 100%;
 }
+
+/* Splitscreen */
+
+.about{
+	height: 300vh;
+	display: flex;
+	background: #eeeeee;
+}
+
+.about-title{
+	width: 50%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+	margin: 0!important;
+}
+
+.about-pages{
+	width: 50%;
+}
+
+.about-pages div{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	color: white;
+}
+
+.about-pages div> p{
+	width: 80%;
+	font-size: 18px;
+	line-height: 30px;
+
+}
+
+.about-pages div:nth-child(1){
+	background-color: #0d7377;
+}
+
+.about-pages div:nth-child(2){
+	background-color: #00adb5;
+}
+
+.about-pages div:nth-child(3){
+	background-color: #71c9ce;
+}
+
+
+/* Footer */
+footer{
+	height: 20vh;
+	background: #00adb5;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 
 
 
