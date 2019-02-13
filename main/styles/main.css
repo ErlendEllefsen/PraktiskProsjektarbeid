@@ -16,7 +16,6 @@
 /* Header */
 .header{
 	display: flex;
-	
 }
 
 a{
@@ -53,7 +52,7 @@ img{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 30px;
+	font-size: 2.5vw;
 	margin: 0!important;
 }
 
@@ -72,21 +71,24 @@ img{
 
 .about-pages div> p{
 	width: 80%;
-	font-size: 18px;
+	font-size: 1.2vw;
 	line-height: 30px;
+}
 
+.about-pages div> h2{
+	font-size: 2vw;
 }
 
 .about-pages div:nth-child(1){
-	background-color: #0d7377;
+	background-image: linear-gradient(to bottom, #222831, #0d7377);
 }
 
 .about-pages div:nth-child(2){
-	background-color: #00adb5;
+	background-image: linear-gradient(to bottom, #0d7377, #00adb5);
 }
 
 .about-pages div:nth-child(3){
-	background-color: #71c9ce;
+	background-image: linear-gradient(to bottom, #00adb5, #71c9ce);
 }
 
 .intro-text-1, .intro-text-2, .intro-text-3{
@@ -98,6 +100,23 @@ img{
 .intro-appear{
 	opacity: 1;
 	transform: translateY(0px);
+}
+
+/*Contacts*/
+
+.contacts{
+	height: 50vh;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background: #0d7377;
+}
+
+.child1, .child2, .child3{
+	height: 25vh;
+	width: 15%;	
+	background: #71c9ce;
 }
 
 
