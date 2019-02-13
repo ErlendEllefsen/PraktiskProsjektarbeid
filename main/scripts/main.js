@@ -25,7 +25,7 @@ splitScroll();
 function scollAppear1(){
 	var introText = document.querySelector('.intro-text-1');
 	var introPosition = introText.getBoundingClientRect().top;
-	var screenPosition = window.innerHeight / 2;
+	var screenPosition = window.innerHeight / 1.5;
 
 	if (introPosition < screenPosition) {
 		introText.classList.add('intro-appear');
@@ -37,7 +37,7 @@ function scollAppear1(){
 function scollAppear2(){
 	var introText = document.querySelector('.intro-text-2');
 	var introPosition = introText.getBoundingClientRect().top;
-	var screenPosition = window.innerHeight / 2;
+	var screenPosition = window.innerHeight / 1.5;
 
 	if (introPosition < screenPosition) {
 		introText.classList.add('intro-appear');
@@ -49,7 +49,7 @@ function scollAppear2(){
 function scollAppear3(){
 	var introText = document.querySelector('.intro-text-3');
 	var introPosition = introText.getBoundingClientRect().top;
-	var screenPosition = window.innerHeight / 2;
+	var screenPosition = window.innerHeight / 1.5;
 
 	if (introPosition < screenPosition) {
 		introText.classList.add('intro-appear');
