@@ -13,25 +13,25 @@
 	font-family: 'Sarabun', sans-serif;
 }
 
-/* Header */
-.header{
-	display: flex;
+/* Menu */
+
+
+
+.menu-icon1, .menu-icon2, .menu-icon3{
+  width: 3%;
+  height: 1vh;
+  background-color: black;
+  margin: 1% 1%;
+  position: fixed;
 }
 
-a{
-	text-decoration: none;
-	color: white;
+.menu-icon2{
+	margin-top: 2%;
 }
 
-.link-home, .link-more, .link-about, .link-info{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background: #222831;
-	height: 10vh;
-	width: 25%;
+.menu-icon3{
+	margin-top: 3%;
 }
-
 /* Banner */
 
 img{
