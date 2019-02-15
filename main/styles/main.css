@@ -116,7 +116,7 @@ img{
 .child1, .child2, .child3{
 	height: 25vh;
 	width: 15%;	
-	background-image: linear-gradient(to bottom right, #71c9ce, #0d7377);
+	background: #71c9ce;
 }
 
 
