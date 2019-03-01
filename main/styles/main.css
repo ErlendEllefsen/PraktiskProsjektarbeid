@@ -14,23 +14,39 @@
 }
 
 /* Header */
-.header{
-	display: flex;
+#header{
+	display: inline-flex;
+	top:0;
+	transition: top 0.6s;
+	position: fixed;
+	width: 100%;
+	z-index:1; 
+	/* Z-Indexen bestemmer hvilken div som skal prioriteres ved hoover for eksempel
+	 * dette funker 	
+	*/
 }
 
 a{
 	text-decoration: none;
 	color: white;
 }
-
-.link-home, .link-more, .link-about, .link-info{
-	display: flex;
+li{
+	list-style: none;
+	display: inline-flex;
 	justify-content: center;
 	align-items: center;
 	background: #222831;
-	height: 10vh;
 	width: 25%;
 }
+.link-home, .link-more, .link-about, .link-info{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	background: #222831;
+	height: 8vh;
+	width: 25%;
+}
+
 
 .link-home:hover, .link-more:hover, .link-about:hover, .link-info:hover{
 	background-color: rgba(0,0,0,0.8);
@@ -152,6 +168,41 @@ footer{
 	-webkit-transform: scale(1.1); /* for Safari 3-8 */
 	transition: scale(1.1);
 }
+
+.dropbtn {
+  background: #222831;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(0,0,0,0.8);;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: rgba(0,0,0,0.8);}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: rgba(0,0,0,0.8);}
 
 
 
