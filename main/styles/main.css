@@ -8,7 +8,7 @@
 
 
 .main{
-	height: 100vh;
+
 	width: 100%;
 	font-family: 'Sarabun', sans-serif;
 }
@@ -25,16 +25,10 @@
 	 * dette funker 	
 	*/
 }
-/* Menu */
 
-
-
-.menu-icon1, .menu-icon2, .menu-icon3{
-  width: 3%;
-  height: 1vh;
-  background-color: white;
-  margin: 1% 1%;
-  position: fixed;
+a{
+	text-decoration: none;
+	color: white;
 }
 li{
 	list-style: none;
@@ -58,29 +52,11 @@ li{
 	background-color: rgba(0,0,0,0.8);
 }
 
-
-.menu-icon2{
-	margin-top: 2%;
-}
-
-.menu-icon3{
-	margin-top: 3%;
-}
-
 /* Banner */
+
 img{
 	max-width: 100%;
-	margin-bottom: -0.6vh;
 }
-
-.banner-text{
-	position: absolute;
-  	top: 40vh;
-  	left: 50%;
-  	transform: translate(-50%, -50%);
-  	font-size: 3vw;
-  	color: #222831	;
-}	
 
 /* Splitscreen */
 

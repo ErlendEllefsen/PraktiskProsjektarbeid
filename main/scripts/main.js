@@ -1,34 +1,6 @@
 /* Main JS Doucument */
 
 
-/* Changing menu color */
-
-$(document).ready(function(){
-  $(window).scroll(function(){
-  	var scroll = $(window).scrollTop();
-	  if (scroll > window.innerHeight*0.767) {
-	    $(".menu-icon1").css("background-color" , "black");
-	  }
-
-	  else{
-		  $(".menu-icon1").css("background-color" , "white");  	
-	  }
-	   if (scroll > window.innerHeight*0.75) {
-	    $(".menu-icon2").css("background-color" , "black");
-	  }
-
-	  else{
-		  $(".menu-icon2").css("background-color" , "white");  	
-	  }
-	   if (scroll > window.innerHeight*0.72) {
-	    $(".menu-icon3").css("background-color" , "black");
-	  }
-
-	  else{
-		  $(".menu-icon3").css("background-color" , "white");  	
-	  }
-  })
-})
 
 //Splitscreen
 
@@ -97,5 +69,4 @@ var currentScrollPos = window.pageYOffset;
   }
   prevScrollpos = currentScrollPos;
 }
-
 
