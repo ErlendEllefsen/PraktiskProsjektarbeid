@@ -32,10 +32,6 @@ a{
 	width: 25%;
 }
 
-.link-home:hover, .link-more:hover, .link-about:hover, .link-info:hover{
-	background-color: rgba(0,0,0,0.8);
-}
-
 /* Banner */
 
 img{
@@ -101,12 +97,6 @@ img{
 	transition: 0.5s all ease-in-out;
 }
 
-.intro-text-1:hover, .intro-text-2:hover, .intro-text-3:hover {
-	-ms-transform: scale(1.1);
-	-webkit-transform: scale(1.1);
-	transition: scale(1.1);
-}
-
 .intro-appear{
 	opacity: 1;
 	transform: translateY(0px);
@@ -137,20 +127,6 @@ footer{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-
-.zoom {
-	padding-top: 25px; /* Padding i selve boksen */
-	background-color: blue;
-	transition: transform .5s; /* Tiden animasjonen bruker for å fullføre */
-	
-	margin: auto; /* Plasserer boksen midt på skjermen (venstre/høyre, ikke top/bot) */
-}
-
-.zoom:hover { /* Hvor stor "zoomen" skal være */
-	-ms-transform: scale(1.1); /* for IE 9 */
-	-webkit-transform: scale(1.1); /* for Safari 3-8 */
-	transition: scale(1.1);
 }
 
 
