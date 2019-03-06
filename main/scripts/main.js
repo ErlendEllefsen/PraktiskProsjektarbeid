@@ -1,8 +1,14 @@
 /* Main JS Doucument */
 
+//Scroll Disable
+function noscroll() {
+  var y = element.getBoundingClientRect().top;
+  window.scrollTo(0, y);
+  console.log(y);
+}
 
 //Giga Menu
-
+	
 
 
 function openNav() {
@@ -10,7 +16,7 @@ function openNav() {
   document.getElementById("myContent").style.opacity = "1";
   document.getElementById("myCloseBtn").style.opacity = "1";
   document.getElementById("header").style.opacity = "0";
-  document.getElementsByTagName("body")[0].style.position = "fixed";
+  window.addEventListener('scroll', noscroll);
 }
 
 function closeNav() {
@@ -18,7 +24,7 @@ function closeNav() {
   document.getElementById("myContent").style.opacity = "0";
   document.getElementById("myCloseBtn").style.opacity = "0";
   document.getElementById("header").style.opacity = "1";
-  document.getElementsByTagName("body")[0].style.position = "relative";
+  window.removeEventListener('scroll', noscroll);
 }
 
 
