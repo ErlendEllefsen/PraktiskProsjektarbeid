@@ -12,6 +12,10 @@
 	width: 100%;	
 }
 
+body{
+	overflow-y: scroll;
+}
+
 /* Giga Menu */
 
 .overlay {
@@ -28,12 +32,8 @@
 }
 
 .overlay-content {
-  transition: 0.5s all ease-in-out;
-}
-
-.overlay h1{
-	color: gray;
-}
+  transition: 2s all ease-in-out;
+}	
 
 .overlay a {
   text-decoration: none;
@@ -51,6 +51,7 @@
   margin-right: 2%;
   font-size: 60px;
   cursor: pointer;
+  transition: 1s all ease-in-out;
 }
 
 /* Header */

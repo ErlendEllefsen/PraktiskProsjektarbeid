@@ -3,11 +3,14 @@
 
 //Giga Menu
 
+
+
 function openNav() {
   document.getElementById("myNav").style.width = "100%";
   document.getElementById("myContent").style.opacity = "1";
   document.getElementById("myCloseBtn").style.opacity = "1";
   document.getElementById("header").style.opacity = "0";
+  document.getElementsByTagName("body")[0].style.position = "fixed";
 }
 
 function closeNav() {
@@ -15,6 +18,7 @@ function closeNav() {
   document.getElementById("myContent").style.opacity = "0";
   document.getElementById("myCloseBtn").style.opacity = "0";
   document.getElementById("header").style.opacity = "1";
+  document.getElementsByTagName("body")[0].style.position = "relative";
 }
 
 
@@ -85,3 +89,4 @@ var currentScrollPos = window.pageYOffset;
   }
   prevScrollpos = currentScrollPos;
 }
+
