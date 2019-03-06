@@ -5,10 +5,16 @@
 
 function openNav() {
   document.getElementById("myNav").style.width = "100%";
+  document.getElementById("myContent").style.opacity = "1";
+  document.getElementById("myCloseBtn").style.opacity = "1";
+  document.getElementById("header").style.opacity = "0";
 }
 
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
+  document.getElementById("myContent").style.opacity = "0";
+  document.getElementById("myCloseBtn").style.opacity = "0";
+  document.getElementById("header").style.opacity = "1";
 }
 
 
@@ -70,7 +76,7 @@ function scollAppear3(){
 
 // Hide navbar when scrolling down, show nav bar when scrolling up.
 var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
+window.onscroll = function() {	
 var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("header").style.top = "0";
