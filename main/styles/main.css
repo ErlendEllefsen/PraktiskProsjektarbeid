@@ -1,5 +1,7 @@
 /* CSS Dokument PRO1000 Gruppe 3 */
-
+html {
+  scroll-behavior: smooth;
+}
 *{
 	box-sizing: border-box;
 	margin: 0;
@@ -43,6 +45,7 @@ body{
 .overlay a{
 	color: #818181;
 	text-decoration: none;
+	padding-bottom: -10%;
 }
 
 .overlay-content h1:hover {
