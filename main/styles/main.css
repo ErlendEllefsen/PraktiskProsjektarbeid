@@ -1,6 +1,9 @@
 /* CSS Dokument PRO1000 Gruppe 3 */
-html {
-  
+
+
+html{
+	scroll-behavior: smooth;
+
 }
 *{
 	box-sizing: border-box;
@@ -14,9 +17,7 @@ html {
 	width: 100%;	
 }
 
-body{
-	overflow-y: scroll;
-}
+
 
 /* Giga Menu */
 
@@ -47,7 +48,7 @@ body{
 	padding-bottom: -10%;
 }
 
-.overlay p:hover, h1:hover{
+.overlay p:hover, h1:hover, .closebtn:hover{
 	color: white;
 	transition: 0.2s;
 }
@@ -63,7 +64,7 @@ body{
 .boxes{
 	height: 50vh;
 	width: 100%;
-	margin-top: -5vh;
+	margin-top: 10vh;
 }
 
 .overlay-home{
@@ -144,7 +145,7 @@ img{
 /* Splitscreen */
 
 .about{
-	height: 300vh;
+	height: 500vh;
 	display: flex;
 	background: #eeeeee;
 	margin-top: -0.25%;
@@ -175,27 +176,33 @@ img{
 
 .about-pages div> p{
 	width: 80%;
-	font-size: 1.2vw;
+	font-size: 1.4vw;
 	line-height: 30px;
 }
 
 .about-pages div> h2{
-	font-size: 2vw;
+	font-size: 2.2vw;
 }
 
 .about-pages div:nth-child(1){
-	background-image: linear-gradient(to bottom, #222831, #0d7377);
+	background-image: linear-gradient(to bottom, #222831, #393e46 );
 }
 
 .about-pages div:nth-child(2){
-	background-image: linear-gradient(to bottom, #0d7377, #00adb5);
+	background-image: linear-gradient(to bottom, #393e46, #084c4f);
 }
 
 .about-pages div:nth-child(3){
+	background-image: linear-gradient(to bottom, #084c4f , #0d7377);
+}
+.about-pages div:nth-child(4){
+	background-image: linear-gradient(to bottom, #0d7377, #00adb5);
+}
+.about-pages div:nth-child(5){
 	background-image: linear-gradient(to bottom, #00adb5, #71c9ce);
 }
 
-.intro-text-1, .intro-text-2, .intro-text-3{
+.intro-text-1, .intro-text-2, .intro-text-3, .intro-text-4, .intro-text-5{
 	opacity: 0;
 	transform: translateY(20px);
 	transition: 0.5s all ease-in-out;

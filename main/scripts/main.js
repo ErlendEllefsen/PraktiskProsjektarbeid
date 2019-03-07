@@ -1,5 +1,7 @@
 /* Main JS Doucument */
 
+	
+
 //Scroll Disable
 function noscroll() {
   var y = element.getBoundingClientRect().top;
@@ -34,7 +36,7 @@ function splitScroll() {
 	const controller = new ScrollMagic.Controller();
 
 	new ScrollMagic.Scene({
-		duration: '200%', 
+		duration: '400%', 
 		triggerElement:'.about-title',
 		triggerHook: 0
 	})
@@ -83,6 +85,30 @@ function scollAppear3(){
 }
 
 	window.addEventListener('scroll',scollAppear3);
+
+function scollAppear4(){
+	var introText = document.querySelector('.intro-text-4');
+	var introPosition = introText.getBoundingClientRect().top;
+	var screenPosition = window.innerHeight / 1.5;
+
+	if (introPosition < screenPosition) {
+		introText.classList.add('intro-appear');
+	}
+}
+
+	window.addEventListener('scroll',scollAppear4);
+
+function scollAppear5(){
+	var introText = document.querySelector('.intro-text-5');
+	var introPosition = introText.getBoundingClientRect().top;
+	var screenPosition = window.innerHeight / 1.5;
+
+	if (introPosition < screenPosition) {
+		introText.classList.add('intro-appear');
+	}
+}
+
+	window.addEventListener('scroll',scollAppear5);
 
 // Hide navbar when scrolling down, show nav bar when scrolling up.
 var prevScrollpos = window.pageYOffset;
