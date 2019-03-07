@@ -226,11 +226,43 @@ img{
 
 /* Footer */
 footer{
+	/*
 	height: 20vh;
-	background: #00adb5;
+	background: #222831;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	*/
+}
+
+.footerparts{
+	height: 30vh;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background: #222831;
+	font-size: 1.3vw;
+
+}
+
+.footerleft{
+	width: 30%;
+	color: white;
+
+
+}
+
+.footerleft img{
+	width: auto;
+	height: auto;
+	max-width: 9%;
+	max-height: 9%;
+}
+
+.footerright{
+	width: 30%;	
+	color: white;
 }
 
 
