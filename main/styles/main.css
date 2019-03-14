@@ -146,16 +146,12 @@ img{
   fill:none;
   stroke: black;
   stroke-width:2;
-  opacity: 0;
-  color: white;
-
-}
-.path-appear{
-	opacity: 1;
-	color: black;
 
 }
 
+#lineDrawing{
+	opacity: 0;
+}
 
 /* Splitscreen */
 

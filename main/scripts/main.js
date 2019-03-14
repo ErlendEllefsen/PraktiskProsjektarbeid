@@ -1,6 +1,20 @@
 /* Main JS Doucument */
 
 var Played = false;
+
+//Delay
+
+function delay(ms) {
+        var cur_d = new Date();
+        var cur_ticks = cur_d.getTime();
+        var ms_passed = 0;
+        while(ms_passed < ms) {
+            var d = new Date();  // Possible memory leak?
+            var ticks = d.getTime();
+            ms_passed = ticks - cur_ticks;
+            // d = null;  // Prevent memory leak?
+        }
+    }
 	
 
 //Scroll Disable
@@ -30,25 +44,6 @@ function closeNav() {
   window.removeEventListener('scroll', noscroll);
 }
 
-//Svg Animation
-
-
-/*function startDraw(){
-
-	var firstDraw = document.querySelector('about-title');
-	var introPosition = introText.getBoundingClientRect().top;
-	var screenPosition = window.innerHeight / 1.5;
-
-	var lineDrawing = anime({
-	    targets: '#lineDrawing .lines path',
-	    strokeDashoffset: [anime.setDashoffset, 0],
-	    easing: 'easeInOutSine',
-	    duration: 4000,
-	    loop: false
-	});
-
-}*/
-
 //Splitscreen
 
 function splitScroll() {
@@ -69,6 +64,8 @@ splitScroll();
 
 //Appeareffect
 
+
+
 function scollAppear1(){
 	
 	var introText = document.querySelector('.intro-text-1');
@@ -80,17 +77,27 @@ function scollAppear1(){
 	if (introPosition < screenPosition) {
 		introText.classList.add('intro-appear');
 	}
+	
 
 	if (!Played && introPosition < animePosition) {
+
+		delay(500);
+		
 		
 		var lineDrawing = anime({
     		targets: '#lineDrawing .lines path',
     		strokeDashoffset: [anime.setDashoffset, 0],
-    		easing: 'easeInOutSine',
-    		duration: 4000
+    		delay: function(el, i) { return i * 250 },
+    		 direction: 'alternate',
+    		easing: 'easeInOutCubic',
+    		duration: 4000,
+    		loop: false,
+    		autoplay: false
 		});
-		animePath.classList.add('path-appear');
+		
+		
 		Played=true;
+		document.getElementById("lineDrawing").style.opacity = "1";
 	}
 
 }
