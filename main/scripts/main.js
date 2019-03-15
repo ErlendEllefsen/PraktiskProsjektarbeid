@@ -37,32 +37,43 @@ function splitScroll() {
 
 	new ScrollMagic.Scene({
 		duration: '400%', 
-		triggerElement:'.about-title',
+		triggerElement:'.bo-title',
 		triggerHook: 0
 	})
 
-	.setPin('.about-title')
+	.setPin('.bo-title')
+	.addTo(controller)
+
+	new ScrollMagic.Scene({
+		duration: '400%', 
+		triggerElement:'.porsgrunn-title',
+		triggerHook: 0
+	})
+
+
+	.setPin('.porsgrunn-title')
 	.addTo(controller);
+
 }
 
 splitScroll();
 
 
-//Appeareffect
+//Svg Animations
 
- function scollAppear1(){
-	
+function drawMap(){
+
 	var introText = document.querySelector('.intro-text-1');
-	var animePath = document.querySelector('.my-path');
 	var introPosition = introText.getBoundingClientRect().top;
-	var screenPosition = window.innerHeight / 1.5;
 	var animePosition = window.innerHeight / 1.3;
 
-	if (introPosition < screenPosition) {
-		introText.classList.add('intro-appear');
-	}
 
 	if (!Played && introPosition < animePosition) {
+
+		function drawAppear(){
+			document.getElementById("lineDrawing").style.opacity = "1";
+		} window.addEventListener('scroll', drawAppear);
+
 
 		
 		var lineDrawing = anime({
@@ -71,62 +82,49 @@ splitScroll();
     		easing: 'easeInOutCubic',
     		duration: 3000
 		});
-		animePath.classList.add('path-color');
+
+		
+
+	
 		
 		Played=true;
 	}
 
 }
 
+	window.addEventListener('scroll', drawMap);
+//Appeareffect
+
+ function scollAppear1(){
+	
+	var introText = document.querySelector('.intro-text-1');
+	var introText2 = document.querySelector('.intro-text-2');
+	var introText3 = document.querySelector('.intro-text-3');
+	var introText4 = document.querySelector('.intro-text-4');	
+	var introText5 = document.querySelector('.intro-text-5');
+
+	var animePath = document.querySelector('.my-path');
+	var introPosition = introText.getBoundingClientRect().top;
+	var introPosition2 = introText2.getBoundingClientRect().top;
+	var introPosition3 = introText3.getBoundingClientRect().top;
+	var introPosition4 = introText4.getBoundingClientRect().top;
+	var introPosition5 = introText5.getBoundingClientRect().top;
+	var screenPosition = window.innerHeight / 1.5;
+	var animePosition = window.innerHeight / 1.3;
+
+	if (introPosition < screenPosition)
+		introText.classList.add('intro-appear');
+	if (introPosition2 < screenPosition)
+		introText2.classList.add('intro-appear');
+	if (introPosition3 < screenPosition)
+		introText3.classList.add('intro-appear');
+	if (introPosition4 < screenPosition)
+		introText4.classList.add('intro-appear');
+	if (introPosition5 < screenPosition)
+		introText5.classList.add('intro-appear');
+
+}
 	window.addEventListener('scroll',scollAppear1);
-
-function scollAppear2(){
-	var introText = document.querySelector('.intro-text-2');
-	var introPosition = introText.getBoundingClientRect().top;
-	var screenPosition = window.innerHeight / 1.5;
-
-	if (introPosition < screenPosition) {
-		introText.classList.add('intro-appear');
-	}
-}
-
-	window.addEventListener('scroll',scollAppear2);
-
-function scollAppear3(){
-	var introText = document.querySelector('.intro-text-3');
-	var introPosition = introText.getBoundingClientRect().top;
-	var screenPosition = window.innerHeight / 1.5;
-
-	if (introPosition < screenPosition) {
-		introText.classList.add('intro-appear');
-	}
-}
-
-	window.addEventListener('scroll',scollAppear3);
-
-function scollAppear4(){
-	var introText = document.querySelector('.intro-text-4');
-	var introPosition = introText.getBoundingClientRect().top;
-	var screenPosition = window.innerHeight / 1.5;
-
-	if (introPosition < screenPosition) {
-		introText.classList.add('intro-appear');
-	}
-}
-
-	window.addEventListener('scroll',scollAppear4);
-
-function scollAppear5(){
-	var introText = document.querySelector('.intro-text-5');
-	var introPosition = introText.getBoundingClientRect().top;
-	var screenPosition = window.innerHeight / 1.5;
-
-	if (introPosition < screenPosition) {
-		introText.classList.add('intro-appear');
-	}
-}
-
-	window.addEventListener('scroll',scollAppear5);
 
 // Hide navbar when scrolling down, show nav bar when scrolling up.
 var prevScrollpos = window.pageYOffset;

@@ -144,22 +144,13 @@ img{
 
 .my-path {
   fill:none;
-  stroke: white;
+  stroke: black;
   stroke-width:2;
-  opacity: 0;
-}
-.path-appear{
-	visibility: visible;
-	stroke-width:2;
 }
 
-.path-color{
-	opacity: 1;
-	stroke: black;
-	transition: width 2s;
+#lineDrawing{
+	opacity: 0;
 }
-
-
 
 svg{
 	width: 50%;
@@ -176,7 +167,7 @@ svg{
 	margin-top: -0.25%;
 }
 
-.about-title{
+.bo-title, .porsgrunn-title{
 	width: 50%;
 	height: 100vh;
 	display: flex;
@@ -227,7 +218,7 @@ svg{
 	background-image: linear-gradient(to bottom, #00adb5, #71c9ce);
 }
 
-.intro-text-1, .intro-text-2, .intro-text-3, .intro-text-4, .intro-text-5{
+.intro-text-1, .intro-text-2, .intro-text-3, .intro-text-4, .intro-text-5, .intro-text-6, .intro-text-7, .intro-text-8, .intro-text-9, .intro-text-10{
 	opacity: 0;
 	transform: translateY(20px);
 	transition: 0.5s all ease-in-out;
