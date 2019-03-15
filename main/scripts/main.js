@@ -1,6 +1,6 @@
 /* Main JS Doucument */
 
-	
+var Played = false;
 
 //Scroll Disable
 function noscroll() {
@@ -50,14 +50,30 @@ splitScroll();
 
 //Appeareffect
 
-function scollAppear1(){
+ function scollAppear1(){
+	
 	var introText = document.querySelector('.intro-text-1');
+	var animePath = document.querySelector('.my-path');
 	var introPosition = introText.getBoundingClientRect().top;
 	var screenPosition = window.innerHeight / 1.5;
+	var animePosition = window.innerHeight / 1.3;
 
 	if (introPosition < screenPosition) {
 		introText.classList.add('intro-appear');
 	}
+
+	if (!Played && introPosition < animePosition) {
+		
+		var lineDrawing = anime({
+    		targets: '#lineDrawing .lines path',
+    		strokeDashoffset: [anime.setDashoffset, 0],
+    		easing: 'easeInOutSine',
+    		duration: 4000
+		});
+		animePath.classList.add('path-appear');
+		Played=true;
+	}
+
 }
 
 	window.addEventListener('scroll',scollAppear1);
