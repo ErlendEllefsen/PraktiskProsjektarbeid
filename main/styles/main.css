@@ -148,7 +148,7 @@ img{
   stroke-width:2;
 }
 
-#lineDrawing{
+#lineDrawing, #lineDrawing2{
 	opacity: 0;
 }
 

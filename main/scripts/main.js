@@ -1,6 +1,7 @@
 /* Main JS Doucument */
 
 var Played = false;
+var Played2 = false;
 
 //Scroll Disable
 function noscroll() {
@@ -64,17 +65,16 @@ splitScroll();
 function drawMap(){
 
 	var introText = document.querySelector('.intro-text-1');
+	var introText6 = document.querySelector('.intro-text-6');
 	var introPosition = introText.getBoundingClientRect().top;
+	var introPosition6 = introText6.getBoundingClientRect().top;
 	var animePosition = window.innerHeight / 1.3;
-
 
 	if (!Played && introPosition < animePosition) {
 
 		function drawAppear(){
 			document.getElementById("lineDrawing").style.opacity = "1";
 		} window.addEventListener('scroll', drawAppear);
-
-
 		
 		var lineDrawing = anime({
     		targets: '#lineDrawing .lines path',
@@ -83,25 +83,41 @@ function drawMap(){
     		duration: 3000
 		});
 
-		
-
-	
-		
 		Played=true;
 	}
+	if (!Played2 && introPosition6 < animePosition) {
+
+		function drawAppear(){
+			document.getElementById("lineDrawing2").style.opacity = "1";
+		} window.addEventListener('scroll', drawAppear);
+		
+		var lineDrawing2 = anime({
+    		targets: '#lineDrawing2 .lines path',
+    		strokeDashoffset: [anime.setDashoffset, 0],
+    		easing: 'easeInOutCubic',
+    		duration: 3000
+		});
+
+		Played2=true;
+	}
+
+			
+	
+	
 
 }
 
 	window.addEventListener('scroll', drawMap);
 //Appeareffect
 
- function scollAppear1(){
+ function scollAppear(){
 	
 	var introText = document.querySelector('.intro-text-1');
 	var introText2 = document.querySelector('.intro-text-2');
 	var introText3 = document.querySelector('.intro-text-3');
 	var introText4 = document.querySelector('.intro-text-4');	
 	var introText5 = document.querySelector('.intro-text-5');
+	var introText6 = document.querySelector('.intro-text-6');
 
 	var animePath = document.querySelector('.my-path');
 	var introPosition = introText.getBoundingClientRect().top;
@@ -109,6 +125,7 @@ function drawMap(){
 	var introPosition3 = introText3.getBoundingClientRect().top;
 	var introPosition4 = introText4.getBoundingClientRect().top;
 	var introPosition5 = introText5.getBoundingClientRect().top;
+	var introPosition6 = introText6.getBoundingClientRect().top;
 	var screenPosition = window.innerHeight / 1.5;
 	var animePosition = window.innerHeight / 1.3;
 
@@ -122,9 +139,11 @@ function drawMap(){
 		introText4.classList.add('intro-appear');
 	if (introPosition5 < screenPosition)
 		introText5.classList.add('intro-appear');
+	if (introPosition6 < screenPosition)
+		introText6.classList.add('intro-appear');
 
 }
-	window.addEventListener('scroll',scollAppear1);
+	window.addEventListener('scroll',scollAppear);
 
 // Hide navbar when scrolling down, show nav bar when scrolling up.
 var prevScrollpos = window.pageYOffset;
