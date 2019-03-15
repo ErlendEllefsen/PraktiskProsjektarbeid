@@ -63,6 +63,7 @@ splitScroll();
 	}
 
 	if (!Played && introPosition < animePosition) {
+
 		
 		var lineDrawing = anime({
     		targets: '#lineDrawing .lines path',
@@ -70,7 +71,8 @@ splitScroll();
     		easing: 'easeInOutCubic',
     		duration: 3000
 		});
-		animePath.classList.add('path-appear');
+		animePath.classList.add('path-color');
+		
 		Played=true;
 	}
 

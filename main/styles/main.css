@@ -144,17 +144,22 @@ img{
 
 .my-path {
   fill:none;
-  stroke: black;
+  stroke: white;
   stroke-width:2;
-  opacity: 0	;
-  
-
+  opacity: 0;
 }
 .path-appear{
-	opacity: 1;
-	color: black;
-
+	visibility: visible;
+	stroke-width:2;
 }
+
+.path-color{
+	opacity: 1;
+	stroke: black;
+	transition: width 2s;
+}
+
+
 
 svg{
 	width: 50%;
