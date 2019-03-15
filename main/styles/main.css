@@ -116,7 +116,7 @@ html{
 	color: white;
 }
 
-.link-bø, .link-porsgrunn, .link-notodden, .link-tinn, .giga-menu{
+.link-home, .link-more, .link-about, .link-info, .giga-menu{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -138,19 +138,6 @@ span > p{
 
 img{
 	max-width: 100%;
-}
-
-/* Svg classes */
-
-.my-path {
-  fill:none;
-  stroke: black;
-  stroke-width:2;
-
-}
-
-#lineDrawing{
-	opacity: 0;
 }
 
 /* Splitscreen */
