@@ -119,15 +119,14 @@ function drawMap(){
 	var introText5 = document.querySelector('.intro-text-5');
 	var introText6 = document.querySelector('.intro-text-6');
 
-	var animePath = document.querySelector('.my-path');
 	var introPosition = introText.getBoundingClientRect().top;
 	var introPosition2 = introText2.getBoundingClientRect().top;
 	var introPosition3 = introText3.getBoundingClientRect().top;
 	var introPosition4 = introText4.getBoundingClientRect().top;
 	var introPosition5 = introText5.getBoundingClientRect().top;
 	var introPosition6 = introText6.getBoundingClientRect().top;
+
 	var screenPosition = window.innerHeight / 1.5;
-	var animePosition = window.innerHeight / 1.3;
 
 	if (introPosition < screenPosition)
 		introText.classList.add('intro-appear');
