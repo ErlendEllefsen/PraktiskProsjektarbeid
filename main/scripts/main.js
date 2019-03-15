@@ -4,18 +4,7 @@ var Played = false;
 
 //Delay
 
-function delay(ms) {
-        var cur_d = new Date();
-        var cur_ticks = cur_d.getTime();
-        var ms_passed = 0;
-        while(ms_passed < ms) {
-            var d = new Date();  // Possible memory leak?
-            var ticks = d.getTime();
-            ms_passed = ticks - cur_ticks;
-            // d = null;  // Prevent memory leak?
-        }
-    }
-	
+
 
 //Scroll Disable
 function noscroll() {
@@ -80,24 +69,16 @@ function scollAppear1(){
 	
 
 	if (!Played && introPosition < animePosition) {
-
-		delay(500);
-		
 		
 		var lineDrawing = anime({
     		targets: '#lineDrawing .lines path',
     		strokeDashoffset: [anime.setDashoffset, 0],
-    		delay: function(el, i) { return i * 250 },
-    		 direction: 'alternate',
-    		easing: 'easeInOutCubic',
-    		duration: 4000,
-    		loop: false,
-    		autoplay: false
+    		easing: 'easeInOutSine',
+    		duration: 4000
 		});
-		
-		
+		animePath.classList.add('path-appear');
 		Played=true;
-		document.getElementById("lineDrawing").style.opacity = "1";
+		
 	}
 
 }
