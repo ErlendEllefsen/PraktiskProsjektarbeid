@@ -146,14 +146,19 @@ img{
   fill:none;
   stroke: black;
   stroke-width:2;
-  opacity: 0;
-  color: white;
+  opacity: 0	;
+  
 
 }
 .path-appear{
 	opacity: 1;
 	color: black;
 
+}
+
+svg{
+	width: 50%;
+	height: 50vh;
 }
 
 

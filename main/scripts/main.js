@@ -67,8 +67,8 @@ splitScroll();
 		var lineDrawing = anime({
     		targets: '#lineDrawing .lines path',
     		strokeDashoffset: [anime.setDashoffset, 0],
-    		easing: 'easeInOutSine',
-    		duration: 4000
+    		easing: 'easeInOutCubic',
+    		duration: 3000
 		});
 		animePath.classList.add('path-appear');
 		Played=true;
