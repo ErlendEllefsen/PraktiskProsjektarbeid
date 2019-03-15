@@ -79,7 +79,7 @@ function drawMap(){
 		var lineDrawing = anime({
     		targets: '#lineDrawing .lines path',
     		strokeDashoffset: [anime.setDashoffset, 0],
-    		easing: 'easeInOutCubic',
+    		easing: 'easeInOutSine',
     		duration: 3000
 		});
 
@@ -94,7 +94,7 @@ function drawMap(){
 		var lineDrawing2 = anime({
     		targets: '#lineDrawing2 .lines path',
     		strokeDashoffset: [anime.setDashoffset, 0],
-    		easing: 'easeInOutCubic',
+    		easing: 'easeInOutSine',
     		duration: 3000
 		});
 
