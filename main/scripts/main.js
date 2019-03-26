@@ -1,7 +1,5 @@
 /* Main JS Doucument */
 
-var Played = false;
-var Played2 = false;
 
 //Scroll Disable
 function noscroll() {
@@ -55,6 +53,26 @@ function splitScroll() {
 	.setPin('.porsgrunn-title')
 	.addTo(controller);
 
+	new ScrollMagic.Scene({
+		duration: '400%', 
+		triggerElement:'.notodden-title',
+		triggerHook: 0
+	})
+
+
+	.setPin('.notodden-title')
+	.addTo(controller);
+
+	new ScrollMagic.Scene({
+		duration: '400%', 
+		triggerElement:'.tinn-title',
+		triggerHook: 0
+	})
+
+
+	.setPin('.tinn-title')
+	.addTo(controller);
+
 }
 
 splitScroll();
@@ -62,19 +80,29 @@ splitScroll();
 
 //Svg Animations
 
+var Played = false;
+var Played2 = false;
+var Played3 = false;
+var Played4 = false;
+
+
 function drawMap(){
 
 	var introText = document.querySelector('.intro-text-1');
 	var introText6 = document.querySelector('.intro-text-6');
+	var introText11 = document.querySelector('.intro-text-11');
+	var introText16 = document.querySelector('.intro-text-16');
 	var introPosition = introText.getBoundingClientRect().top;
 	var introPosition6 = introText6.getBoundingClientRect().top;
+	var introPosition11 = introText11.getBoundingClientRect().top;
+	var introPosition16 = introText16.getBoundingClientRect().top;
 	var animePosition = window.innerHeight / 1.3;
 
 	if (!Played && introPosition < animePosition) {
 
-		function drawAppear(){
+		function drawAppear1(){
 			document.getElementById("lineDrawing").style.opacity = "1";
-		} window.addEventListener('scroll', drawAppear);
+		} window.addEventListener('scroll', drawAppear1);
 		
 		var lineDrawing = anime({
     		targets: '#lineDrawing .lines path',
@@ -87,9 +115,9 @@ function drawMap(){
 	}
 	if (!Played2 && introPosition6 < animePosition) {
 
-		function drawAppear(){
+		function drawAppear2(){
 			document.getElementById("lineDrawing2").style.opacity = "1";
-		} window.addEventListener('scroll', drawAppear);
+		} window.addEventListener('scroll', drawAppear2);
 		
 		var lineDrawing2 = anime({
     		targets: '#lineDrawing2 .lines path',
@@ -101,8 +129,37 @@ function drawMap(){
 		Played2=true;
 	}
 
-			
-	
+	if (!Played3 && introPosition11 < animePosition) {
+
+		function drawAppear3(){
+			document.getElementById("lineDrawing3").style.opacity = "1";
+		} window.addEventListener('scroll', drawAppear3);
+		
+		var lineDrawing3 = anime({
+    		targets: '#lineDrawing3 .lines path',
+    		strokeDashoffset: [anime.setDashoffset, 0],
+    		easing: 'easeInOutSine',
+    		duration: 3000
+		});
+
+		Played3=true;
+	}
+
+	if (!Played4 && introPosition16 < animePosition) {
+
+		function drawAppear4(){
+			document.getElementById("lineDrawing4").style.opacity = "1";
+		} window.addEventListener('scroll', drawAppear4);
+		
+		var lineDrawing4 = anime({
+    		targets: '#lineDrawing4 .lines path',
+    		strokeDashoffset: [anime.setDashoffset, 0],
+    		easing: 'easeInOutSine',
+    		duration: 3000
+		});
+
+		Played4=true;
+	}
 	
 
 }

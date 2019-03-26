@@ -142,13 +142,27 @@ img{
 
 /* Svg classes */
 
-.my-path {
+.my-path, .my-path2 {
   fill:none;
   stroke: black;
   stroke-width:2;
 }
 
-#lineDrawing, #lineDrawing2{
+.my-path3 {
+  fill:none;
+  stroke: black;
+  stroke-width:5;
+}
+
+.my-path4 {
+  fill:none;
+  stroke: black;
+  stroke-width:8;
+}
+
+
+
+#lineDrawing, #lineDrawing2, #lineDrawing3, #lineDrawing4{
 	opacity: 0;
 }
 
@@ -188,6 +202,7 @@ svg{
 	justify-content: space-around;
 	align-items: center;
 	color: white;
+	line-height: 2em;
 }
 
 .about-pages div> p{
