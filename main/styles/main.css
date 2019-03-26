@@ -167,7 +167,7 @@ svg{
 	margin-top: -0.25%;
 }
 
-.bo-title, .porsgrunn-title{
+.bo-title, .porsgrunn-title, .notodden-title, .tinn-title{
 	width: 50%;
 	height: 100vh;
 	display: flex;
@@ -218,7 +218,10 @@ svg{
 	background-image: linear-gradient(to bottom, #00adb5, #71c9ce);
 }
 
-.intro-text-1, .intro-text-2, .intro-text-3, .intro-text-4, .intro-text-5, .intro-text-6, .intro-text-7, .intro-text-8, .intro-text-9, .intro-text-10{
+.intro-text-1, .intro-text-2, .intro-text-3, .intro-text-4, .intro-text-5, 
+.intro-text-6, .intro-text-7, .intro-text-8, .intro-text-9, .intro-text-10,
+.intro-text-11, .intro-text-12, .intro-text-13, .intro-text-14, .intro-text-15, 
+.intro-text-16, .intro-text-17, .intro-text-18, .intro-text-19, .intro-text-20{
 	opacity: 0;
 	transform: translateY(20px);
 	transition: 0.5s all ease-in-out;
