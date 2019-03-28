@@ -5,6 +5,7 @@ html{
 	scroll-behavior: smooth;
 
 }
+
 *{
 	box-sizing: border-box;
 	-webkit-box-sizing:border-box;
@@ -12,9 +13,7 @@ html{
 	margin: 0;
 	padding: 0;
 	font-family: 'Sarabun', sans-serif;
-
 }
-
 
 .main{
 	width: 100%;	
@@ -133,6 +132,11 @@ span > p{
 	cursor: pointer;
 }
 
+span{
+	margin: 0;
+	padding: 0;
+}
+
 
 
 
@@ -210,12 +214,14 @@ svg{
 
 .about-pages div> p{
 	width: 80%;
-	font-size: 1.4vw;
+	font-size: 1.5vw;
 	line-height: 30px;
+	margin-bottom: 10%;
 }
 
 .about-pages div> h2{
-	font-size: 2.2vw;
+	font-size: 2.7vw;
+	color: white;
 }
 
 .about-pages div:nth-child(1){
@@ -250,37 +256,10 @@ svg{
 	transform: translateY(0px);
 }
 
-/*Contacts*/
-
-.contacts{
-	height: 50vh;
-	width: 100%;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	background: #0d7377;
-}
-
-.child1, .child2, .child3{
-	height: 25vh;
-	width: 15%;	
-	background: #71c9ce;
-}
-
-
 /* Footer */
-footer{
-	/*
-	height: 20vh;
-	background: #222831;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	*/
-}
 
 .footerparts{
-	height: 30vh;
+	height: 40vh;
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
@@ -309,12 +288,14 @@ footer{
 	color: white;
 }
 
+
+
 .slider img {
-	height: 20vh;
+	height: 40vh;
 	-moz-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
-	border-radius: 10%
+	
 }
 
 .padding {
