@@ -213,3 +213,51 @@ var currentScrollPos = window.pageYOffset;
   prevScrollpos = currentScrollPos;
 }
 
+//Slider 
+
+$('.variable-width').slick({
+  dots: false,
+  infinite: true,
+  speed: 2000,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  centerMode: true,
+  arrows: false,
+  variableWidth: true,
+  autoplay: true,
+  autoplaySpeed: 1000,
+  rtl: true,
+  pauseOnHover: true,
+  
+});
+
+$('.variable-width1').slick({
+  dots: false,
+  infinite: true,
+  speed: 2000,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  centerMode: true,
+  arrows: false,
+  variableWidth: true,
+  autoplay: true,
+  autoplaySpeed: 1000,
+  pauseOnHover: true,
+
+});
+
+
+const slider = $(".slider-item");
+
+slider.on('wheel', (function(e) {
+  e.preventDefault();
+
+  if (e.originalEvent.deltaY < 0) {
+    $(this).slick('slickNext');
+  } else {
+    $(this).slick('slickPrev');
+  }
+}));
+
+//Slider Slutt
+

@@ -7,9 +7,12 @@ html{
 }
 *{
 	box-sizing: border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
 	margin: 0;
 	padding: 0;
 	font-family: 'Sarabun', sans-serif;
+
 }
 
 
@@ -136,7 +139,7 @@ span > p{
 
 /* Banner */
 
-img{
+.imgHead{
 	max-width: 100%;
 }
 
@@ -291,6 +294,34 @@ footer{
 	color: white;
 }
 
+.slider img {
+	height: 20vh;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	border-radius: 10%
+}
+
+.padding {
+	padding: 25px;
+
+}
+
+.slider img:hover { /* Hvor stor "zoomen" skal være */
+	-moz-transform: scale(1.1); /* for IE 9 */
+	-webkit-transform: scale(1.1); /* for Safari 3-8 */
+	transition: : scale(1.1);
+}
+
+.hover-shadow:hover {
+	-webkit-box-shadow: 10px 10px 5px 2px rgba(0,0,0,0.35);
+	-moz-box-shadow: 10px 10px 5px 2px rgba(0,0,0,0.35);
+	box-shadow: 10px 10px 5px 2px rgba(0,0,0,0.35);
+}
+
+.slider img.hover-shadow {
+  	transition: 0.5s;
+}
 
 
 
