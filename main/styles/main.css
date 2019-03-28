@@ -209,13 +209,13 @@ svg{
 	justify-content: space-around;
 	align-items: center;
 	color: white;
-	line-height: 2em;
+	
 }
 
 .about-pages div> p{
 	width: 80%;
 	font-size: 1.5vw;
-	line-height: 30px;
+	line-height: 2em;
 	margin-bottom: 10%;
 }
 
