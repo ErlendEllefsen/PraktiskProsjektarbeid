@@ -1,21 +1,22 @@
 /* CSS Dokument PRO1000 Gruppe 3 */
-html {
-  
+
+
+html{
+	scroll-behavior: smooth;
+
 }
+
 *{
 	box-sizing: border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
 	margin: 0;
 	padding: 0;
 	font-family: 'Sarabun', sans-serif;
 }
 
-
 .main{
 	width: 100%;	
-}
-
-body{
-	overflow-y: scroll;
 }
 
 /* Giga Menu */
@@ -28,7 +29,7 @@ body{
   top: 0;
   left: 0;
   background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.8);
+  background-color: rgba(0,0,0, 0.9);
   overflow-x: hidden;
   transition: 1s;
 }
@@ -47,7 +48,7 @@ body{
 	padding-bottom: -10%;
 }
 
-.overlay p:hover, h1:hover{
+.overlay p:hover, h1:hover, .closebtn:hover{
 	color: white;
 	transition: 0.2s;
 }
@@ -63,7 +64,7 @@ body{
 .boxes{
 	height: 50vh;
 	width: 100%;
-	margin-top: -5vh;
+	margin-top: 10vh;
 }
 
 .overlay-home{
@@ -131,26 +132,63 @@ span > p{
 	cursor: pointer;
 }
 
+span{
+	margin: 0;
+	padding: 0;
+}
+
 
 
 
 
 /* Banner */
 
-img{
+.imgHead{
 	max-width: 100%;
 }
+
+/* Svg classes */
+
+.my-path, .my-path2 {
+  fill:none;
+  stroke: black;
+  stroke-width:2;
+}
+
+.my-path3 {
+  fill:none;
+  stroke: black;
+  stroke-width:5;
+}
+
+.my-path4 {
+  fill:none;
+  stroke: black;
+  stroke-width:8;
+}
+
+
+
+#lineDrawing, #lineDrawing2, #lineDrawing3, #lineDrawing4{
+	opacity: 0;
+}
+
+svg{
+	width: 50%;
+	height: 50vh;
+}
+
 
 /* Splitscreen */
 
 .about{
-	height: 300vh;
+	height: 500vh;
 	display: flex;
 	background: #eeeeee;
 	margin-top: -0.25%;
 }
 
-.about-title{
+.bo-title, .porsgrunn-title, .notodden-title, .tinn-title{
 	width: 50%;
 	height: 100vh;
 	display: flex;
@@ -171,31 +209,43 @@ img{
 	justify-content: space-around;
 	align-items: center;
 	color: white;
+	
 }
 
 .about-pages div> p{
 	width: 80%;
-	font-size: 1.2vw;
-	line-height: 30px;
+	font-size: 1.5vw;
+	line-height: 2em;
+	margin-bottom: 10%;
 }
 
 .about-pages div> h2{
-	font-size: 2vw;
+	font-size: 2.7vw;
+	color: white;
 }
 
 .about-pages div:nth-child(1){
-	background-image: linear-gradient(to bottom, #222831, #0d7377);
+	background-image: linear-gradient(to bottom, #222831, #393e46 );
 }
 
 .about-pages div:nth-child(2){
-	background-image: linear-gradient(to bottom, #0d7377, #00adb5);
+	background-image: linear-gradient(to bottom, #393e46, #084c4f);
 }
 
 .about-pages div:nth-child(3){
+	background-image: linear-gradient(to bottom, #084c4f , #0d7377);
+}
+.about-pages div:nth-child(4){
+	background-image: linear-gradient(to bottom, #0d7377, #00adb5);
+}
+.about-pages div:nth-child(5){
 	background-image: linear-gradient(to bottom, #00adb5, #71c9ce);
 }
 
-.intro-text-1, .intro-text-2, .intro-text-3{
+.intro-text-1, .intro-text-2, .intro-text-3, .intro-text-4, .intro-text-5, 
+.intro-text-6, .intro-text-7, .intro-text-8, .intro-text-9, .intro-text-10,
+.intro-text-11, .intro-text-12, .intro-text-13, .intro-text-14, .intro-text-15, 
+.intro-text-16, .intro-text-17, .intro-text-18, .intro-text-19, .intro-text-20{
 	opacity: 0;
 	transform: translateY(20px);
 	transition: 0.5s all ease-in-out;
@@ -206,33 +256,68 @@ img{
 	transform: translateY(0px);
 }
 
-/*Contacts*/
+/* Footer */
 
-.contacts{
-	height: 50vh;
+.footerparts{
+	height: 40vh;
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	background: #0d7377;
+	background: #222831;
+	font-size: 1.3vw;
+
 }
 
-.child1, .child2, .child3{
-	height: 25vh;
-	width: 15%;	
-	background: #71c9ce;
+.footerleft{
+	width: 30%;
+	color: white;
+
+
+}
+
+.footerleft img{
+	width: auto;
+	height: auto;
+	max-width: 9%;
+	max-height: 9%;
+}
+
+.footerright{
+	width: 30%;	
+	color: white;
 }
 
 
-/* Footer */
-footer{
-	height: 20vh;
-	background: #00adb5;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+
+.slider img {
+	height: 40vh;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	
 }
 
+.padding {
+	padding: 25px;
+
+}
+
+.slider img:hover { /* Hvor stor "zoomen" skal være */
+	-moz-transform: scale(1.1); /* for IE 9 */
+	-webkit-transform: scale(1.1); /* for Safari 3-8 */
+	transition: : scale(1.1);
+}
+
+.hover-shadow:hover {
+	-webkit-box-shadow: 10px 10px 5px 2px rgba(0,0,0,0.35);
+	-moz-box-shadow: 10px 10px 5px 2px rgba(0,0,0,0.35);
+	box-shadow: 10px 10px 5px 2px rgba(0,0,0,0.35);
+}
+
+.slider img.hover-shadow {
+  	transition: 0.5s;
+}
 
 
 
