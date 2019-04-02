@@ -4,8 +4,9 @@
 	<title>Explore Telemark</title>
 	<link rel="stylesheet" type="text/css" href="styles/landingstyle.css">
 	<meta charset="UTF-8">
-	<script type="text/javascript" src="scripts/app.js"></script>
 	<script src="scripts/jquery.js"></script>
+	<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+
 
 
 
@@ -22,6 +23,9 @@
 		-webkit-text-stroke-width: 1px;
 		-webkit-text-stroke-color: black;
 	}
+	h1.animate{
+		font-size: 1em;
+	}
 
 </style>
 </head>
@@ -30,7 +34,19 @@
 <body>
 	<div id="fullpage" data-Xswitch>
 		<div class="sections">
-			<div class="section" id="section1">EXPLORE TELEMARK</div>
+			<div class="section" id="section1">
+				<div class="bg">			
+				<h1 class="animate">
+					<span class="text-wrapper">
+						<span class="line line1"></span>
+						<span class="letters">EXPLORE TELEMARK</span>
+						<span class="line line2"></span>
+					</span>
+				</h1>
+			</div>
+		</div>
+
+
 			<div class="section" id="section2">Kartfunksjon (kommer...)
 				<a href="index.html" class="a1">(Midlertidig lenke til index)</a></div>
 		</div>
@@ -39,5 +55,7 @@
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
 <script type="text/javascript" src="scripts/XSwitch.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script src="scripts/landing.js"></script>
 </body>
 </html>
