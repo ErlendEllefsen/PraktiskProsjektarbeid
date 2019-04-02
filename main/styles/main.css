@@ -3,6 +3,7 @@
 
 html{
 	scroll-behavior: smooth;
+	background: #eeeeee;
 
 }
 
@@ -145,6 +146,7 @@ span{
 
 .imgHead{
 	max-width: 100%;
+	z-index: 3;
 }
 
 /* Svg classes */

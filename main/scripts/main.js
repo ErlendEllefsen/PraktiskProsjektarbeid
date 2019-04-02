@@ -1,6 +1,11 @@
 /* Main JS Doucument */
 
 
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
+
+
 //Scroll Disable
 function noscroll() {
   var y = element.getBoundingClientRect().top;
