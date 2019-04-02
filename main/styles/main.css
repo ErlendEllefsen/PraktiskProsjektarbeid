@@ -3,7 +3,7 @@
 
 html{
 	scroll-behavior: smooth;
-	background: #eeeeee;
+	background: #e8edf3;
 
 }
 
@@ -110,7 +110,7 @@ html{
 	transition: top 0.5s;
 	top: 0;
 	z-index: 1;
-	background: #222831;
+	background: #22264b;
 	transition: 1s all ease-in-out;
 }
 
@@ -185,9 +185,7 @@ svg{
 
 .about{
 	height: 500vh;
-	display: flex;
-	background: #eeeeee;
-	margin-top: -0.25%;
+	display: flex;	
 }
 
 .bo-title, .porsgrunn-title, .notodden-title, .tinn-title{
@@ -202,6 +200,22 @@ svg{
 
 .about-pages{
 	width: 50%;
+
+}
+
+#about-bo {
+	background-image: linear-gradient(to bottom, #ee7d44, #e8edf3 );
+}
+
+#about-pors{
+	background-image: linear-gradient(to bottom, #bccbde, #e8edf3 );
+}
+#about-noto{
+	background-image: linear-gradient(to bottom, #e2e665, #e8edf3 );
+}
+
+#about-tinn{
+	background-image: linear-gradient(to bottom, #62d2a2, #e8edf3 );
 }
 
 .about-pages div{
@@ -210,7 +224,7 @@ svg{
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
-	color: white;
+	color: black;
 	
 }
 
@@ -223,10 +237,10 @@ svg{
 
 .about-pages div> h2{
 	font-size: 2.7vw;
-	color: white;
+	color: black;
 }
 
-.about-pages div:nth-child(1){
+/*.about-pages div:nth-child(1){
 	background-image: linear-gradient(to bottom, #222831, #393e46 );
 }
 
@@ -242,7 +256,7 @@ svg{
 }
 .about-pages div:nth-child(5){
 	background-image: linear-gradient(to bottom, #00adb5, #71c9ce);
-}
+}*/
 
 .intro-text-1, .intro-text-2, .intro-text-3, .intro-text-4, .intro-text-5, 
 .intro-text-6, .intro-text-7, .intro-text-8, .intro-text-9, .intro-text-10,
