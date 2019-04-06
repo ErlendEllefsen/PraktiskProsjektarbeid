@@ -153,7 +153,7 @@ span{
 	height: 100vh;
 }
 
-.headtext-bo {
+.headtext-bo, .headtext-porsgrunn, .headtext-notodden, .headtext-tinn {
   position: absolute;
   top: 50%;
   left: 50%;
