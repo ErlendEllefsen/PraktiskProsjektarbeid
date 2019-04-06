@@ -12,8 +12,7 @@
 	<link rel='stylesheet' href='https://cdn.jsdelivr.net/foundation/5.5.0/css/foundation.css'>
 	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css'>
 	<link rel='stylesheet' href='http://kenwheeler.github.io/slick/slick/slick-theme.css'>
-	<link rel="stylesheet" href="styles.css">
-
+	
 
 
 	<title>Master</title>
@@ -153,23 +152,169 @@
 
 		</section>
 	
-		<div class="slider variable-width" dir="rtl">
-			<div class="padding"><img src="pics/bø3.jpg" class="hover-shadow cursor"></div>
-			<div class="padding"><img src="pics/bø5.jpg" class="hover-shadow cursor"></div>
-			<div class="padding"><img src="pics/bø11.jpg" class="hover-shadow cursor"></div>
-			<div class="padding"><img src="pics/bø4.jpg" class="hover-shadow cursor"></div>
-			<div class="padding"><img src="pics/bø1.jpg" class="hover-shadow cursor"></div>
-			<div class="padding"><img src="pics/bø6.jpg" class="hover-shadow cursor"></div>
-		</div>
+		<body>
+	<div class="slider variable-width" dir="rtl">
+		<div class="padding"><img src="pics/slider3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor""alt="slider"></div>
+		<div class="padding"><img src="pics/slider5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow cursor""alt="slider"></div>
+		<div class="padding"><img src="pics/slider11.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow cursor""alt="slider"></div>
+		<div class="padding"><img src="pics/slider4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor""alt="slider"></div>
+		<div class="padding"><img src="pics/slider1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor""alt="slider"></div>
+		<div class="padding"><img src="pics/slider6.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow cursor""alt="slider"></div>
+		<div class="padding"><img src="pics/slider13.jpg" onclick="openModal();currentSlide(13)" class="hover-shadow cursor""alt="slider"></div>
+	</div>
 
-		<div class="slider variable-width1">
-			<div class="padding"><img src="pics/bø10.jpg" class="hover-shadow cursor"></div>
-			<div class="padding"><img src="pics/bø13.jpg" class="hover-shadow cursor"></div>
-			<div class="padding"><img src="pics/bø7.jpg" class="hover-shadow cursor"></div>
-			<div class="padding"><img src="pics/bø12.jpg" class="hover-shadow cursor"></div>
-			<div class="padding"><img src="pics/bø8.jpg" class="hover-shadow cursor"></div>
-			<div class="padding"><img src="pics/bø9.jpg" class="hover-shadow cursor"></div>
-		</div>
+	<div class="slider variable-width1">
+		<div class="padding"><img src="pics/slider10.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow cursor"></div>
+		<div class="padding"><img src="pics/slider2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor"></div>
+		<div class="padding"><img src="pics/slider7.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow cursor"></div>
+		<div class="padding"><img src="pics/slider12.jpg" onclick="openModal();currentSlide(12)" class="hover-shadow cursor"></div>
+		<div class="padding"><img src="pics/slider8.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor"></div>
+		<div class="padding"><img src="pics/slider9.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow cursor"></div>
+		<div class="padding"><img src="pics/slider14.jpg" onclick="openModal();currentSlide(14)" class="hover-shadow cursor"></div>
+	</div>
+
+  
+  <div id="myModal" class="modal">
+  <spanModal class="close cursor" onclick="closeModal()">&times;</spanModal>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 14</div>
+      <img class="modalSlide" src="pics/slider1.jpg" style="width:100%"alt="slider">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 14</div>
+      <img class="modalSlide" src="pics/slider2.jpg" style="width:100%"alt="slider">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 14</div>
+      <img class="modalSlide" src="pics/slider3.jpg" style="width:100%"alt="slider">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 14</div>
+      <img class="modalSlide" src="pics/slider4.jpg" style="width:100%"alt="slider">
+    </div>
+
+     <div class="mySlides">
+      <div class="numbertext">5 / 14</div>
+      <img class="modalSlide" src="pics/slider5.jpg" style="width:100%"alt="slider">
+    </div>
+
+     <div class="mySlides">
+      <div class="numbertext">6 / 14</div>
+      <img class="modalSlide" src="pics/slider6.jpg" style="width:100%"alt="slider">
+    </div>
+
+     <div class="mySlides">
+      <div class="numbertext">7 / 14</div>
+      <img class="modalSlide" src="pics/slider7.jpg" style="width:100%"alt="slider">
+    </div>
+
+     <div class="mySlides">
+      <div class="numbertext">8 / 14</div>
+      <img class="modalSlide" src="pics/slider8.jpg" style="width:100%"alt="slider">
+    </div>
+
+     <div class="mySlides">
+      <div class="numbertext">9 / 14</div>
+      <img class="modalSlide" src="pics/slider9.jpg" style="width:100%"alt="slider">
+    </div>
+
+     <div class="mySlides">
+      <div class="numbertext">10 / 14</div>
+      <img class="modalSlide" src="pics/slider10.jpg" style="width:100%"alt="slider">
+    </div>
+
+     <div class="mySlides">
+      <div class="numbertext">11 / 14</div>
+      <img class="modalSlide" src="pics/slider11.jpg" style="width:100%"alt="slider">
+    </div>
+
+     <div class="mySlides">
+      <div class="numbertext">12 / 14</div>
+      <img class="modalSlide" src="pics/slider12.jpg" style="width:100%"alt="slider">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">13 / 14</div>
+      <img class="modalSlide" src="pics/slider13.jpg" style="width:100%"alt="slider">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">14 / 14</div>
+      <img class="modalSlide" src="pics/slider14.jpg" style="width:100%"alt="slider">
+    </div>
+
+    <!-- Next/previous controls -->
+    <m class="prev" onclick="plusSlides(-1)">&#10094;</m>
+    <m class="next" onclick="plusSlides(1)">&#10095;</m>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p1 id="caption"></p1>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="thumb" src="pics/slider3.jpg" onclick="currentSlide(3)" alt="slider">
+    </div>
+
+    <div class="column">
+      <img class="thumb" src="pics/slider5.jpg" onclick="currentSlide(5)" alt="slider">
+    </div>
+
+    <div class="column">
+      <img class="thumb" src="pics/slider11.jpg" onclick="currentSlide(11)" alt="slider">
+    </div>
+
+    <div class="column">
+      <img class="thumb" src="pics/slider4.jpg" onclick="currentSlide(4)" alt="slider">
+    </div>
+
+    <div class="column">
+      <img class="thumb" src="pics/slider1.jpg" onclick="currentSlide(1)" alt="slider">
+    </div>
+
+    <div class="column">
+      <img class="thumb" src="pics/slider6.jpg" onclick="currentSlide(6)" alt="slider">
+    </div>
+
+    <div class="column">
+      <img class="thumb" src="pics/slider10.jpg" onclick="currentSlide(10)" alt="slider">
+    </div>
+
+    <div class="column">
+      <img class="thumb" src="pics/slider2.jpg" onclick="currentSlide(2)" alt="slider">
+    </div>
+
+    <div class="column">
+      <img class="thumb" src="pics/slider7.jpg" onclick="currentSlide(7)" alt="slider">
+    </div>
+
+    <div class="column">
+      <img class="thumb" src="pics/slider12.jpg" onclick="currentSlide(12)" alt="slider"">
+    </div>
+
+    <div class="column">
+      <img class="thumb" src="pics/slider8.jpg" onclick="currentSlide(8)" alt="slider">
+    </div>
+
+    <div class="column">
+      <img class="thumb" src="pics/slider9.jpg" onclick="currentSlide(9)" alt="slider">
+    </div>
+
+     <div class="column">
+      <img class="thumb" src="pics/slider13.jpg" onclick="currentSlide(13)" alt="slider">
+    </div>
+
+     <div class="column">
+      <img class="thumb" src="pics/slider14.jpg" onclick="currentSlide(14)" alt="slider">
+    </div>
+  </div>
+</div>
 
 			<section class="about" id="about-pors">
 			
@@ -235,23 +380,167 @@
 		</section>
 
 
-	<div class="slider variable-width" dir="rtl">
-			<div class="padding"><img src="pics/bø3.jpg" class="hover-shadow cursor"></div>
-			<div class="padding"><img src="pics/bø5.jpg" class="hover-shadow cursor"></div>
-			<div class="padding"><img src="pics/bø11.jpg" class="hover-shadow cursor"></div>
-			<div class="padding"><img src="pics/bø4.jpg" class="hover-shadow cursor"></div>
-			<div class="padding"><img src="pics/bø1.jpg" class="hover-shadow cursor"></div>
-			<div class="padding"><img src="pics/bø6.jpg" class="hover-shadow cursor"></div>
+<div class="slider variable-width" dir="rtl">
+		<div class="padding"><img src="pics/slider5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow cursor""alt="slider"></div>
+		<div class="padding"><img src="pics/slider11.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow cursor""alt="slider"></div>
+		<div class="padding"><img src="pics/slider4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor""alt="slider"></div>
+		<div class="padding"><img src="pics/slider1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor""alt="slider"></div>
+		<div class="padding"><img src="pics/slider6.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow cursor""alt="slider"></div>
+		<div class="padding"><img src="pics/slider13.jpg" onclick="openModal();currentSlide(13)" class="hover-shadow cursor""alt="slider"></div>
 	</div>
 
 	<div class="slider variable-width1">
-			<div class="padding"><img src="pics/bø10.jpg" class="hover-shadow cursor"></div>
-			<div class="padding"><img src="pics/bø13.jpg" class="hover-shadow cursor"></div>
-			<div class="padding"><img src="pics/bø7.jpg" class="hover-shadow cursor"></div>
-			<div class="padding"><img src="pics/bø12.jpg" class="hover-shadow cursor"></div>
-			<div class="padding"><img src="pics/bø8.jpg" class="hover-shadow cursor"></div>
-			<div class="padding"><img src="pics/bø9.jpg" class="hover-shadow cursor"></div>
+		<div class="padding"><img src="pics/slider10.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow cursor""alt="slider"></div>
+		<div class="padding"><img src="pics/slider2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor""alt="slider"></div>
+		<div class="padding"><img src="pics/slider7.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow cursor""alt="slider"></div>
+		<div class="padding"><img src="pics/slider12.jpg" onclick="openModal();currentSlide(12)" class="hover-shadow cursor""alt="slider"></div>
+		<div class="padding"><img src="pics/slider8.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor""alt="slider"></div>
+		<div class="padding"><img src="pics/slider9.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow cursor""alt="slider"></div>
+		<div class="padding"><img src="pics/slider14.jpg" onclick="openModal();currentSlide(14)" class="hover-shadow cursor""alt="slider"></div>
 	</div>
+
+  
+  <div id="myModal2" class="modal">
+  <spanModal class="close cursor" onclick="closeModal()">&times;</spanModal>
+  <div class="modal-content">
+
+    <div class="mySlides2">
+      <div class="numbertext">1 / 14</div>
+      <img class="modalSlide" src="pics/slider1.jpg" style="width:100%"alt="slider">
+    </div>
+
+    <div class="mySlides2">
+      <div class="numbertext">2 / 14</div>
+      <img class="modalSlide" src="pics/slider2.jpg" style="width:100%"alt="slider">
+    </div>
+
+    <div class="mySlides2">
+      <div class="numbertext">3 / 14</div>
+      <img class="modalSlide" src="pics/slider3.jpg" style="width:100%"alt="slider">
+    </div>
+
+    <div class="mySlides2">
+      <div class="numbertext">4 / 14</div>
+      <img class="modalSlide" src="pics/slider4.jpg" style="width:100%"alt="slider">
+    </div>
+
+     <div class="mySlides2">
+      <div class="numbertext">5 / 14</div>
+      <img class="modalSlide" src="pics/slider5.jpg" style="width:100%"alt="slider">
+    </div>
+
+     <div class="mySlides2">
+      <div class="numbertext">6 / 14</div>
+      <img class="modalSlide" src="pics/slider6.jpg" style="width:100%"alt="slider">
+    </div>
+
+     <div class="mySlides2">
+      <div class="numbertext">7 / 14</div>
+      <img class="modalSlide" src="pics/slider7.jpg" style="width:100%"alt="slider">
+    </div>
+
+     <div class="mySlides2">
+      <div class="numbertext">8 / 14</div>
+      <img class="modalSlide" src="pics/slider8.jpg" style="width:100%"alt="slider">
+    </div>
+
+     <div class="mySlides2">
+      <div class="numbertext">9 / 14</div>
+      <img class="modalSlide" src="pics/slider9.jpg" style="width:100%"alt="slider">
+    </div>
+
+     <div class="mySlides2">
+      <div class="numbertext">10 / 14</div>
+      <img class="modalSlide" src="pics/slider10.jpg" style="width:100%"alt="slider">
+    </div>
+
+     <div class="mySlides2">
+      <div class="numbertext">11 / 14</div>
+      <img class="modalSlide" src="pics/slider11.jpg" style="width:100%"alt="slider">
+    </div>
+
+     <div class="mySlides2">
+      <div class="numbertext">12 / 14</div>
+      <img class="modalSlide" src="pics/slider12.jpg" style="width:100%"alt="slider">
+    </div>
+
+    <div class="mySlides2">
+      <div class="numbertext">13 / 14</div>
+      <img class="modalSlide" src="pics/slider13.jpg" style="width:100%"alt="slider">
+    </div>
+
+    <div class="mySlides2">
+      <div class="numbertext">14 / 14</div>
+      <img class="modalSlide" src="pics/slider14.jpg" style="width:100%"alt="slider">
+    </div>
+
+    <!-- Next/previous controls -->
+    <m class="prev" onclick="plusSlides(-1)">&#10094;</m>
+    <m class="next" onclick="plusSlides(1)">&#10095;</m>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p1 id="caption"></p1>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="thumb" src="pics/slider3.jpg" onclick="currentSlide(3)" alt="slider">
+    </div>
+
+    <div class="column">
+      <img class="thumb" src="pics/slider5.jpg" onclick="currentSlide(5)" alt="slider">
+    </div>
+
+    <div class="column">
+      <img class="thumb" src="pics/slider11.jpg" onclick="currentSlide(11)" alt="slider">
+    </div>
+
+    <div class="column">
+      <img class="thumb" src="pics/slider4.jpg" onclick="currentSlide(4)" alt="slider">
+    </div>
+
+    <div class="column">
+      <img class="thumb" src="pics/slider1.jpg" onclick="currentSlide(1)" alt="slider">
+    </div>
+
+    <div class="column">
+      <img class="thumb" src="pics/slider6.jpg" onclick="currentSlide(6)" alt="slider">
+    </div>
+
+    <div class="column">
+      <img class="thumb" src="pics/slider10.jpg" onclick="currentSlide(10)" alt="slider">
+    </div>
+
+    <div class="column">
+      <img class="thumb" src="pics/slider2.jpg" onclick="currentSlide(2)" alt="slider">
+    </div>
+
+    <div class="column">
+      <img class="thumb" src="pics/slider7.jpg" onclick="currentSlide(7)" alt="slider">
+    </div>
+
+    <div class="column">
+      <img class="thumb" src="pics/slider12.jpg" onclick="currentSlide(12)" alt="slider"">
+    </div>
+
+    <div class="column">
+      <img class="thumb" src="pics/slider8.jpg" onclick="currentSlide(8)" alt="slider">
+    </div>
+
+    <div class="column">
+      <img class="thumb" src="pics/slider9.jpg" onclick="currentSlide(9)" alt="slider">
+    </div>
+
+     <div class="column">
+      <img class="thumb" src="pics/slider13.jpg" onclick="currentSlide(13)" alt="slider">
+    </div>
+
+     <div class="column">
+      <img class="thumb" src="pics/slider14.jpg" onclick="currentSlide(14)" alt="slider">
+    </div>
+  </div>
+</div>
 
 		<section class="about" id="about-noto">
 			
@@ -323,23 +612,169 @@
 
 		</section>
 
-		<div class="slider variable-width" dir="rtl">
-			<div class="padding"><img src="pics/bø3.jpg" class="hover-shadow cursor"></div>
-			<div class="padding"><img src="pics/bø5.jpg" class="hover-shadow cursor"></div>
-			<div class="padding"><img src="pics/bø11.jpg" class="hover-shadow cursor"></div>
-			<div class="padding"><img src="pics/bø4.jpg" class="hover-shadow cursor"></div>
-			<div class="padding"><img src="pics/bø1.jpg" class="hover-shadow cursor"></div>
-			<div class="padding"><img src="pics/bø6.jpg" class="hover-shadow cursor"></div>
-		</div>
+			<body>
+	<div class="slider variable-width" dir="rtl">
+		<div class="padding"><img src="pics/slider3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor"alt="slider"></div>
+		<div class="padding"><img src="pics/slider5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow cursor"alt="slider"></div>
+		<div class="padding"><img src="pics/slider11.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow cursor"alt="slider"></div>
+		<div class="padding"><img src="pics/slider4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor"alt="slider"></div>
+		<div class="padding"><img src="pics/slider1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"alt="slider"></div>
+		<div class="padding"><img src="pics/slider6.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow cursor"alt="slider"></div>
+		<div class="padding"><img src="pics/slider13.jpg" onclick="openModal();currentSlide(13)" class="hover-shadow cursor"alt="slider"></div>
+	</div>
 
-		<div class="slider variable-width1">
-			<div class="padding"><img src="pics/bø10.jpg" class="hover-shadow cursor"></div>
-			<div class="padding"><img src="pics/bø13.jpg" class="hover-shadow cursor"></div>
-			<div class="padding"><img src="pics/bø7.jpg" class="hover-shadow cursor"></div>
-			<div class="padding"><img src="pics/bø12.jpg" class="hover-shadow cursor"></div>
-			<div class="padding"><img src="pics/bø8.jpg" class="hover-shadow cursor"></div>
-			<div class="padding"><img src="pics/bø9.jpg" class="hover-shadow cursor"></div>
-		</div>
+	<div class="slider variable-width1">
+		<div class="padding"><img src="pics/slider10.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow cursor"alt="slider"></div>
+		<div class="padding"><img src="pics/slider2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor"alt="slider"></div>
+		<div class="padding"><img src="pics/slider7.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow cursor"alt="slider"></div>
+		<div class="padding"><img src="pics/slider12.jpg" onclick="openModal();currentSlide(12)" class="hover-shadow cursor"alt="slider"></div>
+		<div class="padding"><img src="pics/slider8.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor"alt="slider"></div>
+		<div class="padding"><img src="pics/slider9.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow cursor"alt="slider"></div>
+		<div class="padding"><img src="pics/slider14.jpg" onclick="openModal();currentSlide(14)" class="hover-shadow cursor"alt="slider"></div>
+	</div>
+
+  
+  <div id="myModal3" class="modal">
+  <spanModal class="close cursor" onclick="closeModal()">&times;</spanModal>
+  <div class="modal-content">
+
+    <div class="mySlides3">
+      <div class="numbertext">1 / 14</div>
+      <img class="modalSlide" src="pics/slider1.jpg" style="width:100%"alt="slider">
+    </div>
+
+    <div class="mySlides3">
+      <div class="numbertext">2 / 14</div>
+      <img class="modalSlide" src="pics/slider2.jpg" style="width:100%"alt="slider">
+    </div>
+
+    <div class="mySlides3">
+      <div class="numbertext">3 / 14</div>
+      <img class="modalSlide" src="pics/slider3.jpg" style="width:100%"alt="slider">
+    </div>
+
+    <div class="mySlides3">
+      <div class="numbertext">4 / 14</div>
+      <img class="modalSlide" src="pics/slider4.jpg" style="width:100%"alt="slider">
+    </div>
+
+     <div class="mySlides3">
+      <div class="numbertext">5 / 14</div>
+      <img class="modalSlide" src="pics/slider5.jpg" style="width:100%"alt="slider">
+    </div>
+
+     <div class="mySlides3">
+      <div class="numbertext">6 / 14</div>
+      <img class="modalSlide" src="pics/slider6.jpg" style="width:100%"alt="slider">
+    </div>
+
+     <div class="mySlides3">
+      <div class="numbertext">7 / 14</div>
+      <img class="modalSlide" src="pics/slider7.jpg" style="width:100%"alt="slider">
+    </div>
+
+     <div class="mySlides3">
+      <div class="numbertext">8 / 14</div>
+      <img class="modalSlide" src="pics/slider8.jpg" style="width:100%"alt="slider">
+    </div>
+
+     <div class="mySlides3">
+      <div class="numbertext">9 / 14</div>
+      <img class="modalSlide" src="pics/slider9.jpg" style="width:100%"alt="slider">
+    </div>
+
+     <div class="mySlides3">
+      <div class="numbertext">10 / 14</div>
+      <img class="modalSlide" src="pics/slider10.jpg" style="width:100%"alt="slider">
+    </div>
+
+     <div class="mySlides3">
+      <div class="numbertext">11 / 14</div>
+      <img class="modalSlide" src="pics/slider11.jpg" style="width:100%"alt="slider">
+    </div>
+
+     <div class="mySlides3">
+      <div class="numbertext">12 / 14</div>
+      <img class="modalSlide" src="pics/slider12.jpg" style="width:100%"alt="slider">
+    </div>
+
+    <div class="mySlides3">
+      <div class="numbertext">13 / 14</div>
+      <img class="modalSlide" src="pics/slider13.jpg" style="width:100%"alt="slider">
+    </div>
+
+    <div class="mySlides3">
+      <div class="numbertext">14 / 14</div>
+      <img class="modalSlide" src="pics/slider14.jpg" style="width:100%"alt="slider">
+    </div>
+
+    <!-- Next/previous controls -->
+    <m class="prev" onclick="plusSlides(-1)">&#10094;</m>
+    <m class="next" onclick="plusSlides(1)">&#10095;</m>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p1 id="caption"></p1>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="thumb" src="pics/slider3.jpg" onclick="currentSlide(3)" alt="slider">
+    </div>
+
+    <div class="column">
+      <img class="thumb" src="pics/slider5.jpg" onclick="currentSlide(5)" alt="slider">
+    </div>
+
+    <div class="column">
+      <img class="thumb" src="pics/slider11.jpg" onclick="currentSlide(11)" alt="slider">
+    </div>
+
+    <div class="column">
+      <img class="thumb" src="pics/slider4.jpg" onclick="currentSlide(4)" alt="slider">
+    </div>
+
+    <div class="column">
+      <img class="thumb" src="pics/slider1.jpg" onclick="currentSlide(1)" alt="slider">
+    </div>
+
+    <div class="column">
+      <img class="thumb" src="pics/slider6.jpg" onclick="currentSlide(6)" alt="slider">
+    </div>
+
+    <div class="column">
+      <img class="thumb" src="pics/slider10.jpg" onclick="currentSlide(10)" alt="slider">
+    </div>
+
+    <div class="column">
+      <img class="thumb" src="pics/slider2.jpg" onclick="currentSlide(2)" alt="slider">
+    </div>
+
+    <div class="column">
+      <img class="thumb" src="pics/slider7.jpg" onclick="currentSlide(7)" alt="slider">
+    </div>
+
+    <div class="column">
+      <img class="thumb" src="pics/slider12.jpg" onclick="currentSlide(12)" alt="slider"">
+    </div>
+
+    <div class="column">
+      <img class="thumb" src="pics/slider8.jpg" onclick="currentSlide(8)" alt="slider">
+    </div>
+
+    <div class="column">
+      <img class="thumb" src="pics/slider9.jpg" onclick="currentSlide(9)" alt="slider">
+    </div>
+
+     <div class="column">
+      <img class="thumb" src="pics/slider13.jpg" onclick="currentSlide(13)" alt="slider">
+    </div>
+
+     <div class="column">
+      <img class="thumb" src="pics/slider14.jpg" onclick="currentSlide(14)" alt="slider">
+    </div>
+  </div>
+</div>
 
 
 		<section class="about" id="about-tinn">
@@ -413,25 +848,169 @@
 
 		</section>
 
-		<div class="slider variable-width" dir="rtl">
-			<div class="padding"><img src="pics/bø3.jpg" class="hover-shadow cursor"></div>
-			<div class="padding"><img src="pics/bø5.jpg" class="hover-shadow cursor"></div>
-			<div class="padding"><img src="pics/bø11.jpg" class="hover-shadow cursor"></div>
-			<div class="padding"><img src="pics/bø4.jpg" class="hover-shadow cursor"></div>
-			<div class="padding"><img src="pics/bø1.jpg" class="hover-shadow cursor"></div>
-			<div class="padding"><img src="pics/bø6.jpg" class="hover-shadow cursor"></div>
-		</div>
+		<body>
+	<div class="slider variable-width" dir="rtl">
+		<div class="padding"><img src="pics/slider3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor"alt="slider"></div>
+		<div class="padding"><img src="pics/slider5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow cursor"alt="slider"></div>
+		<div class="padding"><img src="pics/slider11.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow cursor"alt="slider"></div>
+		<div class="padding"><img src="pics/slider4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor"alt="slider"></div>
+		<div class="padding"><img src="pics/slider1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"alt="slider"></div>
+		<div class="padding"><img src="pics/slider6.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow cursor"alt="slider"></div>
+		<div class="padding"><img src="pics/slider13.jpg" onclick="openModal();currentSlide(13)" class="hover-shadow cursor"alt="slider"></div>
+	</div>
 
-		<div class="slider variable-width1">
-			<div class="padding"><img src="pics/bø10.jpg" class="hover-shadow cursor"></div>
-			<div class="padding"><img src="pics/bø13.jpg" class="hover-shadow cursor"></div>
-			<div class="padding"><img src="pics/bø7.jpg" class="hover-shadow cursor"></div>
-			<div class="padding"><img src="pics/bø12.jpg" class="hover-shadow cursor"></div>
-			<div class="padding"><img src="pics/bø8.jpg" class="hover-shadow cursor"></div>
-			<div class="padding"><img src="pics/bø9.jpg" class="hover-shadow cursor"></div>
-		</div>
+	<div class="slider variable-width1">
+		<div class="padding"><img src="pics/slider10.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow cursor"alt="slider"></div>
+		<div class="padding"><img src="pics/slider2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor"alt="slider"></div>
+		<div class="padding"><img src="pics/slider7.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow cursor"alt="slider"></div>
+		<div class="padding"><img src="pics/slider12.jpg" onclick="openModal();currentSlide(12)" class="hover-shadow cursor"alt="slider"></div>
+		<div class="padding"><img src="pics/slider8.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor"alt="slider"></div>
+		<div class="padding"><img src="pics/slider9.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow cursor"alt="slider"></div>
+		<div class="padding"><img src="pics/slider14.jpg" onclick="openModal();currentSlide(14)" class="hover-shadow cursor"alt="slider"></div>
+	</div>
 
+  
+  <div id="myModal4" class="modal">
+  <spanModal class="close cursor" onclick="closeModal()">&times;</spanModal>
+  <div class="modal-content">
 
+    <div class="mySlides4">
+      <div class="numbertext">1 / 14</div>
+      <img class="modalSlide" src="pics/slider1.jpg" style="width:100%"alt="slider">
+    </div>
+
+    <div class="mySlides4">
+      <div class="numbertext">2 / 14</div>
+      <img class="modalSlide" src="pics/slider2.jpg" style="width:100%"alt="slider">
+    </div>
+
+    <div class="mySlides4">
+      <div class="numbertext">3 / 14</div>
+      <img class="modalSlide" src="pics/slider3.jpg" style="width:100%"alt="slider">
+    </div>
+
+    <div class="mySlides4">
+      <div class="numbertext">4 / 14</div>
+      <img class="modalSlide" src="pics/slider4.jpg" style="width:100%"alt="slider">
+    </div>
+
+     <div class="mySlides4">
+      <div class="numbertext">5 / 14</div>
+      <img class="modalSlide" src="pics/slider5.jpg" style="width:100%"alt="slider">
+    </div>
+
+     <div class="mySlides4">
+      <div class="numbertext">6 / 14</div>
+      <img class="modalSlide" src="pics/slider6.jpg" style="width:100%"alt="slider">
+    </div>
+
+     <div class="mySlides4">
+      <div class="numbertext">7 / 14</div>
+      <img class="modalSlide" src="pics/slider7.jpg" style="width:100%"alt="slider">
+    </div>
+
+     <div class="mySlides4">
+      <div class="numbertext">8 / 14</div>
+      <img class="modalSlide" src="pics/slider8.jpg" style="width:100%"alt="slider">
+    </div>
+
+     <div class="mySlides4">
+      <div class="numbertext">9 / 14</div>
+      <img class="modalSlide" src="pics/slider9.jpg" style="width:100%"alt="slider">
+    </div>
+
+     <div class="mySlides4">
+      <div class="numbertext">10 / 14</div>
+      <img class="modalSlide" src="pics/slider10.jpg" style="width:100%"alt="slider">
+    </div>
+
+     <div class="mySlides4">
+      <div class="numbertext">11 / 14</div>
+      <img class="modalSlide" src="pics/slider11.jpg" style="width:100%"alt="slider">
+    </div>
+
+     <div class="mySlides4">
+      <div class="numbertext">12 / 14</div>
+      <img class="modalSlide" src="pics/slider12.jpg" style="width:100%"alt="slider">
+    </div>
+
+    <div class="mySlides4">
+      <div class="numbertext">13 / 14</div>
+      <img class="modalSlide" src="pics/slider13.jpg" style="width:100%"alt="slider">
+    </div>
+
+    <div class="mySlides4">
+      <div class="numbertext">14 / 14</div>
+      <img class="modalSlide" src="pics/slider14.jpg" style="width:100%"alt="slider">
+    </div>
+
+    <!-- Next/previous controls -->
+    <m class="prev" onclick="plusSlides(-1)">&#10094;</m>
+    <m class="next" onclick="plusSlides(1)">&#10095;</m>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p1 id="caption"></p1>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="thumb" src="pics/slider3.jpg" onclick="currentSlide(3)" alt="slider">
+    </div>
+
+    <div class="column">
+      <img class="thumb" src="pics/slider5.jpg" onclick="currentSlide(5)" alt="slider">
+    </div>
+
+    <div class="column">
+      <img class="thumb" src="pics/slider11.jpg" onclick="currentSlide(11)" alt="slider">
+    </div>
+
+    <div class="column">
+      <img class="thumb" src="pics/slider4.jpg" onclick="currentSlide(4)" alt="slider">
+    </div>
+
+    <div class="column">
+      <img class="thumb" src="pics/slider1.jpg" onclick="currentSlide(1)" alt="slider">
+    </div>
+
+    <div class="column">
+      <img class="thumb" src="pics/slider6.jpg" onclick="currentSlide(6)" alt="slider">
+    </div>
+
+    <div class="column">
+      <img class="thumb" src="pics/slider10.jpg" onclick="currentSlide(10)" alt="slider">
+    </div>
+
+    <div class="column">
+      <img class="thumb" src="pics/slider2.jpg" onclick="currentSlide(2)" alt="slider">
+    </div>
+
+    <div class="column">
+      <img class="thumb" src="pics/slider7.jpg" onclick="currentSlide(7)" alt="slider">
+    </div>
+
+    <div class="column">
+      <img class="thumb" src="pics/slider12.jpg" onclick="currentSlide(12)" alt="slider"">
+    </div>
+
+    <div class="column">
+      <img class="thumb" src="pics/slider8.jpg" onclick="currentSlide(8)" alt="slider">
+    </div>
+
+    <div class="column">
+      <img class="thumb" src="pics/slider9.jpg" onclick="currentSlide(9)" alt="slider">
+    </div>
+
+     <div class="column">
+      <img class="thumb" src="pics/slider13.jpg" onclick="currentSlide(13)" alt="slider">
+    </div>
+
+     <div class="column">
+      <img class="thumb" src="pics/slider14.jpg" onclick="currentSlide(14)" alt="slider">
+    </div>
+  </div>
+</div>
 
 	<footer>
 		<div class="footerparts">
