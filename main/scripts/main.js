@@ -101,7 +101,7 @@ function drawMap(){
 	var introPosition6 = introText6.getBoundingClientRect().top;
 	var introPosition11 = introText11.getBoundingClientRect().top;
 	var introPosition16 = introText16.getBoundingClientRect().top;
-	var animePosition = window.innerHeight / 1.3;
+	var animePosition = window.innerHeight / 5;
 
 	if (!Played && introPosition < animePosition) {
 
@@ -194,6 +194,10 @@ function drawMap(){
 	var introText18 = document.querySelector('.intro-text-18');
 	var introText19 = document.querySelector('.intro-text-19');
 	var introText20 = document.querySelector('.intro-text-20');
+	var headerText1 = document.querySelector('.header1');
+	var headerText2 = document.querySelector('.header2');
+	var headerText3 = document.querySelector('.header3');
+	var headerText4 = document.querySelector('.header4');
 
 	var introPosition1 = introText1.getBoundingClientRect().top;
 	var introPosition2 = introText2.getBoundingClientRect().top;
@@ -215,8 +219,13 @@ function drawMap(){
 	var introPosition18 = introText18.getBoundingClientRect().top;
 	var introPosition19 = introText19.getBoundingClientRect().top;
 	var introPosition20 = introText20.getBoundingClientRect().top;
+	var headerPosition1 = headerText1.getBoundingClientRect().top;
+	var headerPosition2 = headerText2.getBoundingClientRect().top;
+	var headerPosition3 = headerText3.getBoundingClientRect().top;
+	var headerPosition4 = headerText4.getBoundingClientRect().top;
 
-	var screenPosition = window.innerHeight / 1.5;
+	var screenPosition = window.innerHeight / 5;
+	var screenPosition2 = window.innerHeight /4;
 
 	if (introPosition1 < screenPosition)
 		introText1.classList.add('intro-appear');
@@ -258,6 +267,14 @@ function drawMap(){
 		introText19.classList.add('intro-appear');
 	if (introPosition20 < screenPosition)
 		introText20.classList.add('intro-appear');
+	if (headerPosition1 < screenPosition2)
+		headerText1.classList.add('intro-appear');
+	if (headerPosition2 < screenPosition2)
+		headerText2.classList.add('intro-appear');
+	if (headerPosition3 < screenPosition2)
+		headerText3.classList.add('intro-appear');
+	if (headerPosition4 < screenPosition2)
+		headerText4.classList.add('intro-appear');
 
 
 }

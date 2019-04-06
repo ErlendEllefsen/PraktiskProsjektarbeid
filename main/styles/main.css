@@ -129,6 +129,10 @@ html{
 	color: white;
 }
 
+.menu-button{
+	margin-top: 2.2vh;
+}
+
 span > p{
 	cursor: pointer;
 }
@@ -140,9 +144,16 @@ span{
 
 /* Banner */
 
-.imgHead{
-	max-width: 100%;
-	z-index: 3;
+.imgHead > img{
+	width: 100%;
+	height: 100vh;
+}
+
+.headtext-bo, .headtext-porsgrunn, .headtext-notodden, .headtext-tinn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* Svg classes */
@@ -171,17 +182,69 @@ span{
 	opacity: 0;
 }
 
-svg{
-	width: 50%;
-	height: 50vh;
+.telemark-map{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
+svg.map{
+	width: 30%;
+	height: 30vh;
+	fill: none;
+	stroke: black;
+		
+}
+
+svg.splitmap {
+	position: absolute;
+	width: 50%;
+	height: 50vh;
+	margin-top: 10vh;
+}
+
+.map-animate:hover{
+	fill:black;
+	transform: scale(1.2);
+
+}
+
+.map-animate {
+  transition: all 1s;
+  transform-origin: 0 0;
+}
+
+.map-notodden{
+	float: left;
+	stroke-width:2;
+}
+
+.map-tinn{
+	stroke-width:3;
+}
+
+
+path.map-bo{
+	margin-right: 10%;
+	
+
+}
 
 /* Splitscreen */
 
 .about{
 	height: 500vh;
 	display: flex;	
+}
+
+.header1, .header2, .header3, .header4{
+	text-align: center;
+	color: black;
+	margin-bottom: 70vh;
+	font-size: 3vw;
+	opacity: 0;
+	transform: translateY(20px);
+	transition: 0.5s all ease-in-out;
 }
 
 .bo-title, .porsgrunn-title, .notodden-title, .tinn-title{
