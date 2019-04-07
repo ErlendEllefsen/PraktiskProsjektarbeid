@@ -14,6 +14,8 @@ function noscroll() {
 }
 
 //Giga Menu
+
+
 	
 
 
@@ -90,6 +92,10 @@ var Played2 = false;
 var Played3 = false;
 var Played4 = false;
 
+var Played6 = false;
+var Played7 = false;
+var Played8 = false;
+
 
 function drawMap(){
 
@@ -97,10 +103,12 @@ function drawMap(){
 	var introText6 = document.querySelector('.intro-text-6');
 	var introText11 = document.querySelector('.intro-text-11');
 	var introText16 = document.querySelector('.intro-text-16');
+	var headText1 = document.querySelector('.headtext-bo');
 	var introPosition = introText.getBoundingClientRect().top;
 	var introPosition6 = introText6.getBoundingClientRect().top;
 	var introPosition11 = introText11.getBoundingClientRect().top;
 	var introPosition16 = introText16.getBoundingClientRect().top;
+	var headPosition1 = headText1.getBoundingClientRect().top;
 	var animePosition = window.innerHeight / 5;
 
 	if (!Played && introPosition < animePosition) {
@@ -165,11 +173,30 @@ function drawMap(){
 
 		Played4=true;
 	}
+
+	
+
 	
 
 }
 
 	window.addEventListener('scroll', drawMap);
+
+
+	function firstDraw(){
+
+			document.getElementById("headDrawing1").style.opacity = "1";
+		
+		
+		var headDrawing1 = anime({
+    		targets: '#headDrawing1 .lines path',
+    		strokeDashoffset: [anime.setDashoffset, 0],
+    		easing: 'easeInOutSine',
+    		duration: 3000
+		});
+
+
+}
 //Appeareffect
 
  function scollAppear(){

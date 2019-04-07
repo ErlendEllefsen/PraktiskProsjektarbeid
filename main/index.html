@@ -18,7 +18,7 @@
 
 	<title>Master</title>
 </head>
-<body>
+<body onload="firstDraw()">
 
 	<script src='http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
 	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
@@ -42,28 +42,28 @@
   		</div>
   		<div class="overlay-box2">
   			<a href="#start-pors"><span onclick="closeNav()"><h1>Porsgrunn</h1></span></a>
-  			<a href="#sjofartsmuseum-pors"><span onclick="closeNav()"><p>Sommerland</p></span></a>
-  			<a href="#bratsbergbanen-pors"><span onclick="closeNav()"><p>Lifjell</p></span></a>
-  			<a href="#porselensmuseet-pors"><span onclick="closeNav()"><p>Klatreparken</p></span></a>
-  			<a href="#fjoset/bullinn-pors"><span onclick="closeNav()"><p>Fjoset/Bullinn</p></span></a>
+  			<a href="#sjofartsmuseum-pors"><span onclick="closeNav()"><p>Sjøfartsmuseum</p></span></a>
+  			<a href="#bratsbergbanen-pors"><span onclick="closeNav()"><p>Bratsbergbanen</p></span></a>
+  			<a href="#porselensmuseet-pors"><span onclick="closeNav()"><p>Porselensmuseet</p></span></a>
+  			<a href="#oyhopping-pors"><span onclick="closeNav()"><p>Øyhopping</p></span></a>
   			<a href="#overnatting-pors"><span onclick="closeNav()"><p>Overnatting</p></span></a>
   		</div>
   		
   		<div class="overlay-box3">
-  			<a href="#start-bo"><span onclick="closeNav()"><h1>Bø</h1></span></a>
-  			<a href="#sommerland-bo"><span onclick="closeNav()"><p>Sommerland</p></span></a>
-  			<a href="#lifjell-bo"><span onclick="closeNav()"><p>Lifjell</p></span></a>
-  			<a href="#klatreparken-bo"><span onclick="closeNav()"><p>Klatreparken</p></span></a>
-  			<a href="#fjoset/bullinn-bo"><span onclick="closeNav()"><p>Fjoset/Bullinn</p></span></a>
-  			<a href="#overnatting-bo"><span onclick="closeNav()"><p>Overnatting</p></span></a>
+  			<a href="#start-noto"><span onclick="closeNav()"><h1>Notodden</h1></span></a>
+  			<a href="#telemarksgalleriet-noto"><span onclick="closeNav()"><p>Telemarksgalleriet</p></span></a>
+  			<a href="#blues-noto"><span onclick="closeNav()"><p>Blueseum</p></span></a>
+  			<a href="#heddal-noto"><span onclick="closeNav()"><p>Heddal Stavkirke</p></span></a>
+  			<a href="#tinfos-noto"><span onclick="closeNav()"><p>Tinfos</p></span></a>
+  			<a href="#overnatting-noto"><span onclick="closeNav()"><p>Overnatting</p></span></a>
   		</div>
   		<div class="overlay-box4">
-  			<a href="#start-bo"><span onclick="closeNav()"><h1>Bø</h1></span></a>
-  			<a href="#sommerland-bo"><span onclick="closeNav()"><p>Sommerland</p></span></a>
-  			<a href="#lifjell-bo"><span onclick="closeNav()"><p>Lifjell</p></span></a>
-  			<a href="#klatreparken-bo"><span onclick="closeNav()"><p>Klatreparken</p></span></a>
-  			<a href="#fjoset/bullinn-bo"><span onclick="closeNav()"><p>Fjoset/Bullinn</p></span></a>
-  			<a href="#overnatting-bo"><span onclick="closeNav()"><p>Overnatting</p></span></a>
+  			<a href="#start-tinn"><span onclick="closeNav()"><h1>Tinn</h1></span></a>
+  			<a href="#gausta-tinn"><span onclick="closeNav()"><p>Gaustatoppen</p></span></a>
+  			<a href="#sol-tinn"><span onclick="closeNav()"><p>Solspeil</p></span></a>
+  			<a href="#vemork-tinn"><span onclick="closeNav()"><p>Vemork</p></span></a>
+  			<a href="#museum-tinn"><span onclick="closeNav()"><p>Museum</p></span></a>
+  			<a href="#overnatting-tinn"><span onclick="closeNav()"><p>Overnatting</p></span></a>
   		</div>
    </div>
   </div>
@@ -96,6 +96,7 @@
 
 			<svg class="head-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%"
 	 		height="100vh" viewBox="40 63.5 409.5 178" enable-background="new 40 63.5 409.5 178" xml:space="preserve">
+	 		<g class="lines">
 
 	 	<!-- !!!! Hide ID Layer 1 and 2, to prevent having to scroll past all the lines of svg paths !!!! -->
 
@@ -1095,6 +1096,7 @@
 						 M434.479,181.987c0.06-3.36-1.38-8.58-7.319-8.58c-5.34,0-7.68,4.92-8.1,8.58H434.479z"/>
 				</g>
 			</g>
+		</g>
 			</svg>
 
 		</div>
@@ -1165,7 +1167,7 @@
 
 		</section>
 	
-		<div class="slider variable-width" dir="rtl">
+	<div class="slider variable-width" dir="rtl">
 		<div class="padding"><img src="pics/slider3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor" alt="slider"></div>
 		<div class="padding"><img src="pics/slider5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow cursor" alt="slider"></div>
 		<div class="padding"><img src="pics/slider11.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow cursor" alt="slider"></div>
@@ -1175,7 +1177,7 @@
 		<div class="padding"><img src="pics/slider13.jpg" onclick="openModal();currentSlide(13)" class="hover-shadow cursor" alt="slider"></div>
 	</div>
 
-		<div class="slider variable-width1">
+	<div class="slider variable-width1">
 		<div class="padding"><img src="pics/slider10.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow cursor"></div>
 		<div class="padding"><img src="pics/slider2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor"></div>
 		<div class="padding"><img src="pics/slider7.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow cursor"></div>
@@ -1184,9 +1186,7 @@
 		<div class="padding"><img src="pics/slider9.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow cursor"></div>
 		<div class="padding"><img src="pics/slider14.jpg" onclick="openModal();currentSlide(14)" class="hover-shadow cursor"></div>
 	</div>
-
-  
-  <div id="myModal" class="modal">
+<div id="myModal" class="modal">
   <spanModal class="close cursor" onclick="closeModal()">&times;</spanModal>
   <div class="modal-content">
 
@@ -1372,30 +1372,30 @@
 			</div>
 			<div id="start-pors" class="about-pages">
 				<div class="intro-text-6">
-					<h2 id="sommerland-bo">Sjøfartsmuseum</h2>
+					<h2 id="sjofartsmuseum-pors">Sjøfartsmuseum</h2>
 					<p>
 						Du verden sjøfarts museum er et aktivitets senter som tilbyr blandt annet 3D-kino, værbord, skipssimulatorer og mer. Museumet er for store og små som ønsker en lærerik og morsom opplevelse. Her blir det formidlet rik skipshistorie fra grenland, samt næringsutvikling og fremtidsrettet utdanning. Du verden har stort fokus på lek moro og konkurranser. 
 					</p>
 				</div>
 				<div class="intro-text-7">
-					<h2 id="lifjell-bo">Bratsbergbanen</h2>
+					<h2 id="bratsbergbanen-pors">Bratsbergbanen</h2>
 					<p>
 						  Bratbergsbanen er en vel kjent tog tur i porsgrunn, her blitt du tatt med på tur rundt om i porsgrunn for så å ta turen videre inn i telemark.. Banen ble bygget på 1800-tallet og er nå en turist attraksjon hvor du kan få oppleve en tog tur med historie og utmerket utsikt over Porsgrunn og Skien. Tog turen ender i notodden etter 4 stopp. Tog turen er et utmerket fremkomstmiddel for den som ønsker å besøke flere at telemarks flotte byer på en dag.
 					</p>
 				</div>
 				<div class="intro-text-8">
-					<h2 id="klatreparken-bo">Porselensmuseet</h2>
+					<h2 id="porselensmuseet-pors">Porselensmuseet</h2>
 					<p>
 						 I dette museet får du oppleve historien til den 130år gamle porselenfabrikken som ligger i Porsgrunn. I tillegg får du se hvordan fabrikken produserer, former og dekorerer Porselenen. Over 1000 gjenstander og digitale illustasjoner viser deg historien og produksjonen til fabrikken. Hver helg og i ferier tilbyr fabrikken egne aktiviteter som er ekstra morsomme for barn. Museeet er åpent for gjester hele året.
 				</div>
 				<div class="intro-text-9">
-					<h2 id="overnatting-bo">Øyhopping</h2>
+					<h2 id="oyhopping-pors">Øyhopping</h2>
 					<p>
 						I langendsfjorden ligger det flere flotte øyer som absolutt er verdt å ta turen til. Det går ferge fra Brevik Stathelle, LAngesund eller Helgeroa. nermeste sted fra Porsgrunn sentrum er Bevik som ligger 20 min unna med bil. Her blir du tatt ut til forskjellig øyer vor du kan velge å utforske øyene eller holde deg på båten. Øyhopping tar ganske lang til så man burde sette av en hel dag til dette, man rekker ikke alle øyene på en dag.
 					</p>
 				</div>
 				<div class="intro-text-10">
-					<h2 id="overnatting-bo">Overnatting Porsgrunn</h2>
+					<h2 id="overnatting-pors">Overnatting Porsgrunn</h2>
 					<p>
 						I Porsgrunn har vi Comfort HotellPorsgrunn og hotell VIC som tilbyr overnatting i sentrum. Det finnes flere B&B rundt om i Porsgrunn også som kan være et alternativ for den som ønsker det. Hvis ikke så er det andre hoteller i Skien som ligger bare 7.2 km unna Porsgrunn. 
 					</p>
@@ -1616,33 +1616,33 @@
  					 </g>
 				
 			</div>
-			<div id="start-bo" class="about-pages">
+			<div id="start-noto" class="about-pages">
 				<div class="intro-text-11">
-					<h2 id="sommerland-bo">Telemarksgalleriet/lysbuen</h2>
+					<h2 id="telemarksgalleriet-notoe">Telemarksgalleriet/lysbuen</h2>
 					<p>
 						Her vil du få kunne oppleve industrihistorie og kunst i en helt unik industrihall fra forrige århundre. Det er gallerier med nasjonale og internasjonale kunstverk fra den industrielle gullalderen som er å se her. Det blir også vise frem de viktigste norske oppfinnelsene: lysbueovnen og produktet kunstjødsel. Kunstgjødselproduksjonen forandret norge fra et fattig bondesamfunn til et mer moderne lferdsamfunn etter å ha hjulpet norge ut av en vanskelig mat krise. 
 					</p>
 				</div>
 				<div class="intro-text-12">
-					<h2 id="lifjell-bo">Notodden blueseum</h2>
+					<h2 id="blues-noto">Notodden blueseum</h2>
 					<p>
 						Notodden er kanskje mest kjent for å være en blues by og det er kanskje ikke rart at de da har et museum for blues, her kan du oppleve utstillingen «Fra bomull til Notodden». I denne utstillingen har vi Morgan Freeman som er hoved forteller. Utstillingen viser historien til blues og hvordan den spredde seg helt til Notodden fra Mississippi.  
 					</p>
 				</div>
 				<div class="intro-text-13">
-					<h2 id="klatreparken-bo">Heddal stavkirke</h2>
+					<h2 id="heddal-noto">Heddal stavkirke</h2>
 					<p>
 						Heddal stavkirke er den største av de 28 stavkirkene som vi har her i Norge. Den ble bygget tidlig på 1200-tallet. Besøk kirken for å se et over 800 år gammel byggverk med helt unik og fantastisk trekunst i sitt største format. Stavkirken er åpen for visning og tar imot små grupper av gangen på en rund tur. Du finner Heddal stavkirke langs E-134 vest for Notodden.
 					</p>
 				</div>
 				<div class="intro-text-14">
-					<h2 id="fjoset/bullinn-bo">Tinfos</h2>
+					<h2 id="tinfos-noto">Tinfos</h2>
 					<p>
 						 Tinfos Kulturmiljø tilbyr en rik opplevelse for de som er interessert i historie. Her får du oppleve over 200 år med Industrihistorie. Under besøket ditt vil du få oppleve utviklingen fra det før-industrielle samfunnet til første og andre industrielle revolusjon. Maskiner som tresliperi, papirfabrikk og tre kraftstasjoner er noe av det du vil få oppleve.
 					</p>
 				</div>
 				<div class="intro-text-15">
-					<h2 id="overnatting-bo">Overnatting Notodden</h2>
+					<h2 id="overnatting-noto">Overnatting Notodden</h2>
 					<p>
 						Notodden har mange overnattings alternativer for besøkende. En rekke hoteller, B&B, bobilcamp og campingplass er de som er å tilby. de fleste hotellene ligger i sentrum av Notodden mens de andre overnattingsmulighetene ligger spredt rundt om i Notodden bare noen km unna. Se bluesfestivalen sine egne nettsider for overnatting under denne festivalen ellers er det egne nettsiden for B&B og Hotell. 
 					</p>
@@ -1864,33 +1864,33 @@
  					 </g>
 				</svg>
 			</div>
-			<div id="start-bo" class="about-pages">
+			<div id="start-tinn" class="about-pages">
 				<div class="intro-text-16">
-					<h2 id="sommerland-bo">Gaustatoppen</h2>
+					<h2 id="gausta-tinn">Gaustatoppen</h2>
 					<p>
 						Gaustatoppen er telemarks høyeste fjell og strekker seg til hele 1883 moh. Fjelltoppen er et utmerket reisemål for de som setter pris på en skikkelig fjelltur som ender med en utmerket utsikt over store deler av fastlands Norge. Fjellturen ligger på 9.9km i bratte terreng, så det anbefaler å sette av over 3 timer på turen.
 					</p>
 				</div>
 				<div class="intro-text-17">
-					<h2 id="lifjell-bo">SolSpeil</h2>
+					<h2 id="sol-tinn">SolSpeil</h2>
 					<p>
 						Byen Rjukan ligger i en dal med store fjell på begge sider, dette gjør at Rjukan ikke får noe sol om vinteren. Rjukan hadde ført en gondol bane som gjorde at folke kunne reise lett opp på fjellene for å nyte solen, men i 2013 bygget Tinn kommune solspeil som reflekterer solen ned på Rjukan Torg. Absolutt verdt å få med seg solspeilet i full aksjon om man besøker Rjukan.
 					</p>
 				</div>
 				<div class="intro-text-18">
-					<h2 id="klatreparken-bo">Vemork </h2>
+					<h2 id="vemork-tinn">Vemork </h2>
 					<p>
 						Vemork er en gammel kraftstasjon som befinner seg vest for Rjukan. Denne gamle kraftstasjonen tilbyr nå i dag mye historie fra andre verdenskrig og tungtvannsaksjonen. I tillegg til selve kraftstasjonen som tilbyr visning inne kan man få en guidet tur i fotsporene til sabotørene hvor du får oppleve ruten som ble benyttet for å ta seg inn i Vemork kraftstasjon. 
 					</p>
 				</div>
 				<div class="intro-text-19">
-					<h2 id="overnatting-bo">Tinn Museum</h2>
+					<h2 id="museum-tinn">Tinn Museum</h2>
 					<p>
 						Her kan du få oppleve tradisjoner knyttet til hverdag og fest knyttet til et før-industri samfunn. Museet tilbyr kunnskap om tidlig jernutvinning og håndverkstradisjoner i lokalsamfunnet. Tunet viser deg bygninger, byggeskikk og illustrerte levemåter i tiden 1300-tallet til 1900-tallet.
 					</p>
 				</div>
 				<div class="intro-text-20">
-					<h2 id="overnatting-bo">Overnatting Tinn</h2>
+					<h2 id="overnatting-tinn">Overnatting Tinn</h2>
 					<p>
 						I Tinn er det en rekke fjellstuer hvor man kan velge å overnatte om man ønsker å være litt nærmere naturen. Hvis man ønsker overnatting litt mer i sentralt er det flere hoteller, B&B og camping i Rjukan. Rjukan er den byen i Tinn som ligger ved de fleste turist stedene, det er derfor lagt opp til en rekke overnatting muligheter i her. I Rjukan har vi blant annet Rjukan Gjestegaard, Rjukan admini og flere andre hotell som er åpent for gjester hele året.
 					</p>
