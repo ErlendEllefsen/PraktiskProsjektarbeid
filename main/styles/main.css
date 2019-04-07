@@ -22,6 +22,8 @@ html{
 
 /* Giga Menu */
 
+
+
 .overlay {
   height: 100%;
   width: 0;
@@ -147,6 +149,8 @@ span{
 .imgHead > img{
 	width: 100%;
 	height: 100vh;
+	filter: blur(2px);
+  	-webkit-filter: blur(2px);
 }
 
 .headtext-bo, .headtext-porsgrunn, .headtext-notodden, .headtext-tinn {
@@ -186,6 +190,17 @@ span{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+
+svg.head-svg{
+	stroke: black;
+	fill: none;
+	stroke-width:1;
+
+}
+
+g.tekst-svg{
+	stroke-width: 2;
 }
 
 svg.map{
@@ -393,7 +408,6 @@ path.map-bo{
 .slider img.hover-shadow {
   	transition: 0.5s;
 }
-
 .row > .column {
 	padding: 0 8px;
 }
