@@ -408,22 +408,14 @@ path.map-bo{
 .slider img.hover-shadow {
   	transition: 0.5s;
 }
-.row > .column {
-	padding: 0 8px;
-}
-
-.row:after {
-	content: "";
-	display: table;
-	clear: both;
-}
 
 /* thumbnails */
 
-.column {
+.columnModal {
 	float: left;
-	width: 5vw;
-	height: 5vh;
+	max-width: 5vw;
+	padding-right: 10px;
+	opacity: 0.6;
 }
 
 /* Modal bakgrund */
@@ -527,16 +519,17 @@ path.map-bo{
 img.thumb {
 	opacity: 0.6
 	width: 5vw;
-	height: 5vh;
+	height: 8vh;
 	padding-bottom: 10px;
 }
 
-.active,
-.thumb:hover {
+.active, 
+.thumb, 
+.columnModal:hover {
 	opacity: 1;
 }
 
-.thumb img.hover-shadow {
+img.hover-shadow {
 	transition: 0.3s;
 }
 
