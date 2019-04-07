@@ -298,7 +298,7 @@ $('.variable-width').slick({
   dots: false,
   infinite: true,
   speed: 2000,
-  slidesToShow: 1,
+  slidesToShow: 2,
   slidesToScroll: 1,
   centerMode: true,
   arrows: false,
@@ -314,7 +314,7 @@ $('.variable-width1').slick({
   dots: false,
   infinite: true,
   speed: 2000,
-  slidesToShow: 1,
+  slidesToShow: 2,
   slidesToScroll: 1,
   centerMode: true,
   arrows: false,
@@ -339,4 +339,46 @@ slider.on('wheel', (function(e) {
 }));
 
 //Slider Slutt
+
+//Lightbox start
+
+// Open the Modal
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+
+// Thumbnail image controls
+function currentSlide(t) {
+  showSlides(slideIndex = t);
+}
+// Next/previous controls
+function plusSlides(t) {
+  showSlides(slideIndex += t);
+}
+
+function showSlides(t) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("thumb");
+  var captionText = document.getElementById("caption");
+  if (t > slides.length) {slideIndex = 1}
+  if (t < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+//Lightbox slutt
 
