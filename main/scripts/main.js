@@ -405,6 +405,9 @@ function showSlides(t) {
 
 //Lightbox slutt
 
+
+/* JavaScript for Landingpage (ikke funksjonell, ligger i egen landing.js) */
+// Wrapper hver eneste bokstav i et span, for å kunne animere en og en bokstav
 $('.animate .letters').each(function(){
   $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letters'>$&</span>"));
 });
@@ -438,5 +441,4 @@ $('.bg').mousemove(function(e){
 	var moveX = (e.pageX * -1 / 25); //Verdier som bestemmer hyppighet
 	var moveY = (e.pageY * -1 / 25);
 	$(this).css('background-position', moveX + 'px ' + moveY + 'px')
-})
-
+});
