@@ -48,7 +48,7 @@ html{
 .overlay a{
 	color: #818181;
 	text-decoration: none;
-	padding-bottom: -10%;
+	margin-top: -1vh;
 }
 
 .overlay p:hover, h1:hover, .closebtn:hover{
@@ -65,7 +65,7 @@ html{
 }
 
 .boxes{
-	height: 50vh;
+	height: 40vh;
 	width: 100%;
 	
 }
