@@ -1,17 +1,13 @@
 /* Main JS Doucument */
 
 
+
+
+//When you reload the page you get sent to the top of your current page
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 }
 
-
-//Scroll Disable
-function noscroll() {
-  var y = element.getBoundingClientRect().top;
-  window.scrollTo(0, y);
-  console.log(y);
-}
 
 //Giga Menu
 
@@ -38,9 +34,9 @@ function splitScroll() {
 	const controller = new ScrollMagic.Controller();
 
 	new ScrollMagic.Scene({
-		duration: '400%', 
-		triggerElement:'.bo-title',
-		triggerHook: 0
+		duration: '400%', //Stays fixed for 4 window heights
+		triggerElement:'.bo-title', //Starts from this class
+		triggerHook: 0 //Makes it stay in the middle of the screen
 	})
 
 	.setPin('.bo-title')
@@ -83,44 +79,43 @@ splitScroll();
 
 //Svg Animations
 
-var Played = false;
+var Played = false; //Preventing animation to play more than onse onscroll
 var Played2 = false;
 var Played3 = false;
 var Played4 = false;
-
 var Played6 = false;
 var Played7 = false;
 var Played8 = false;
 
 
-function drawMap(){
+function drawMap(){ //Draws the svg files
 
-	var introText = document.querySelector('.intro-text-1');
+	var introText = document.querySelector('.intro-text-1'); //Selects class, connects to variable
 	var introText6 = document.querySelector('.intro-text-6');
 	var introText11 = document.querySelector('.intro-text-11');
 	var introText16 = document.querySelector('.intro-text-16');
 	var headText1 = document.querySelector('.headtext-bo');
-	var introPosition = introText.getBoundingClientRect().top;
+	var introPosition = introText.getBoundingClientRect().top; //Sets position for variable
 	var introPosition6 = introText6.getBoundingClientRect().top;
 	var introPosition11 = introText11.getBoundingClientRect().top;
 	var introPosition16 = introText16.getBoundingClientRect().top;
 	var headPosition1 = headText1.getBoundingClientRect().top;
-	var animePosition = window.innerHeight / 5;
+	var animePosition = window.innerHeight / 5; //Sets a triggerpoint in the window height
 
-	if (!Played && introPosition < animePosition) {
+	if (!Played && introPosition < animePosition) { 
 
 		function drawAppear1(){
-			document.getElementById("lineDrawing").style.opacity = "1";
+			document.getElementById("lineDrawing").style.opacity = "1"; //Makes svg file visible
 		} window.addEventListener('scroll', drawAppear1);
 		
-		var lineDrawing = anime({
-    		targets: '#lineDrawing .lines path',
-    		strokeDashoffset: [anime.setDashoffset, 0],
-    		easing: 'easeInOutSine',
-    		duration: 3000
+		var lineDrawing = anime({ //Draws svg
+    		targets: '#lineDrawing .lines path', //Sets targets for the animation. Id, class and tag.
+    		strokeDashoffset: [anime.setDashoffset, 0], //Draws the entire svg path, zero offset
+    		easing: 'easeInOutSine', //The type of easing
+    		duration: 3000 //3 seconds
 		});
 
-		Played=true;
+		Played=true; //Prevents animation to trigger again
 	}
 	if (!Played2 && introPosition6 < animePosition) {
 
@@ -170,16 +165,12 @@ function drawMap(){
 		Played4=true;
 	}
 
-	
-
-	
-
 }
 
-	window.addEventListener('scroll', drawMap);
+	window.addEventListener('scroll', drawMap); //scroll trigger on function
 
 
-	function firstDraw(){
+	function firstDraw(){ //Drawing that happenes onload not onscroll
 
 			document.getElementById("headDrawing1").style.opacity = "1";
 		
@@ -193,11 +184,11 @@ function drawMap(){
 
 
 }
-//Appeareffect
+//Appeareffect for text
 
  function scollAppear(){
 	
-	var introText1 = document.querySelector('.intro-text-1');
+	var introText1 = document.querySelector('.intro-text-1'); //Selects class, connects to variable
 	var introText2 = document.querySelector('.intro-text-2');
 	var introText3 = document.querySelector('.intro-text-3');
 	var introText4 = document.querySelector('.intro-text-4');	
@@ -222,7 +213,7 @@ function drawMap(){
 	var headerText3 = document.querySelector('.header3');
 	var headerText4 = document.querySelector('.header4');
 
-	var introPosition1 = introText1.getBoundingClientRect().top;
+	var introPosition1 = introText1.getBoundingClientRect().top; //Sets position for variable
 	var introPosition2 = introText2.getBoundingClientRect().top;
 	var introPosition3 = introText3.getBoundingClientRect().top;
 	var introPosition4 = introText4.getBoundingClientRect().top;
@@ -247,11 +238,11 @@ function drawMap(){
 	var headerPosition3 = headerText3.getBoundingClientRect().top;
 	var headerPosition4 = headerText4.getBoundingClientRect().top;
 
-	var screenPosition = window.innerHeight / 5;
-	var screenPosition2 = window.innerHeight /4;
+	var screenPosition = window.innerHeight / 5; //Triggerpoint in window height
+	var screenPosition2 = window.innerHeight /4; //Sightly higher triggerpoint
 
 	if (introPosition1 < screenPosition)
-		introText1.classList.add('intro-appear');
+		introText1.classList.add('intro-appear'); //Adds class with opacity: 1
 	if (introPosition2 < screenPosition)
 		introText2.classList.add('intro-appear');
 	if (introPosition3 < screenPosition)
@@ -405,6 +396,9 @@ function showSlides(t) {
 
 //Lightbox slutt
 
+
+/* JavaScript for Landingpage (ikke funksjonell, ligger i egen landing.js) */
+// Wrapper hver eneste bokstav i et span, for å kunne animere en og en bokstav
 $('.animate .letters').each(function(){
   $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letters'>$&</span>"));
 });
@@ -438,5 +432,4 @@ $('.bg').mousemove(function(e){
 	var moveX = (e.pageX * -1 / 25); //Verdier som bestemmer hyppighet
 	var moveY = (e.pageY * -1 / 25);
 	$(this).css('background-position', moveX + 'px ' + moveY + 'px')
-})
-
+});
