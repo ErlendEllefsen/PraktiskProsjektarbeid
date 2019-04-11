@@ -262,105 +262,143 @@ function drawMap(){ //Draws the svg files
 		introText1.classList.add('intro-appear'); //Adds class with opacity: 1
 		pin1.classList.add('intro-appear');
 		pin2.classList.remove('intro-appear');
+		pin3.classList.remove('intro-appear');
+		pin4.classList.remove('intro-appear');
 	}
 	if (introPosition2 < screenPosition){
 		introText2.classList.add('intro-appear');
 		pin1.classList.remove('intro-appear');
 		pin2.classList.add('intro-appear');
-		pin3.classList.remove('intro-apear');
+		pin3.classList.remove('intro-appear');
+		pin4.classList.remove('intro-appear');
 	}
 	if (introPosition3 < screenPosition){
 		introText3.classList.add('intro-appear');
+		pin1.classList.remove('intro-appear');
 		pin2.classList.remove('intro-appear');
 		pin3.classList.add('intro-appear');
-		pin4.classList.remove('intro-apear');
+		pin4.classList.remove('intro-appear');
 	}
 	if (introPosition4 < screenPosition){
 		introText4.classList.add('intro-appear');
+		pin1.classList.remove('intro-appear');
+		pin2.classList.remove('intro-appear');
 		pin3.classList.remove('intro-appear');
 		pin4.classList.add('intro-appear');
-		pin5.classList.remove('intro-apear');
 	}
 	if (introPosition5 < screenPosition){
 		introText5.classList.add('intro-appear');
+		pin1.classList.remove('intro-appear');
+		pin2.classList.remove('intro-appear');
+		pin3.classList.remove('intro-appear');
 		pin4.classList.remove('intro-appear');
-		pin5.classList.add('intro-appear');
-		pin6.classList.remove('intro-apear');
+		
 	}
 	if (introPosition6 < screenPosition){
 		introText6.classList.add('intro-appear');
-		pin5.classList.remove('intro-appear');
-		pin6.classList.add('intro-appear');
-		pin7.classList.remove('intro-apear');
+		pin6.classList.remove('intro-appear');
+		pin5.classList.add('intro-appear');
+		pin7.classList.remove('intro-appear');
+		pin8.classList.remove('intro-appear');
 	}
 	if (introPosition7 < screenPosition){
 		introText7.classList.add('intro-appear');
-		pin6.classList.remove('intro-appear');
-		pin7.classList.add('intro-appear');
-		pin8.classList.remove('intro-apear');
+		pin5.classList.remove('intro-appear');
+		pin7.classList.remove('intro-appear');
+		pin6.classList.add('intro-appear');
+		pin8.classList.remove('intro-appear');
 	}
 	if (introPosition8 < screenPosition){
 		introText8.classList.add('intro-appear');
-		pin7.classList.remove('intro-appear');
-		pin8.classList.add('intro-appear');
-		pin9.classList.remove('intro-apear');
+		pin5.classList.remove('intro-appear');
+		pin6.classList.remove('intro-appear');
+		pin8.classList.remove('intro-appear');
+		pin7.classList.add('intro-appear');
 	}
 	if (introPosition9 < screenPosition){
 		introText9.classList.add('intro-appear');
-		pin8.classList.remove('intro-appear');
-		pin9.classList.add('intro-appear');
-		pin10.classList.remove('intro-apear');
+		pin5.classList.remove('intro-appear');
+		pin6.classList.remove('intro-appear');
+		pin7.classList.remove('intro-appear');
+		pin8.classList.add('intro-appear');
 	}
 	if (introPosition10 < screenPosition){
 		introText10.classList.add('intro-appear');
-		pin9.classList.remove('intro-appear');
-		pin10.classList.add('intro-appear');
-		pin11.classList.remove('intro-apear');
+		pin5.classList.remove('intro-appear');
+		pin6.classList.remove('intro-appear');
+		pin7.classList.remove('intro-appear');
+		pin8.classList.remove('intro-appear');
 	}
 	if (introPosition11 < screenPosition){
 		introText11.classList.add('intro-appear');
+		pin9.classList.add('intro-appear');
 		pin10.classList.remove('intro-appear');
-		pin11.classList.add('intro-appear');
-		pin12.classList.remove('intro-apear');
+		pin11.classList.remove('intro-appear');
+		pin12.classList.remove('intro-appear');
 	}
 	if (introPosition12 < screenPosition){
 		introText12.classList.add('intro-appear');
+		pin10.classList.add('intro-appear');
+		pin9.classList.remove('intro-appear');
 		pin11.classList.remove('intro-appear');
-		pin12.classList.add('intro-appear');
-		pin13.classList.remove('intro-apear');
+		pin12.classList.remove('intro-appear');
 	}
 	if (introPosition13 < screenPosition){
 		introText13.classList.add('intro-appear');
+		pin11.classList.add('intro-appear');
+		pin9.classList.remove('intro-appear');
+		pin10.classList.remove('intro-appear');
 		pin12.classList.remove('intro-appear');
-		pin13.classList.add('intro-appear');
-		pin14.classList.remove('intro-apear');
 	}
 	if (introPosition14 < screenPosition){
 		introText14.classList.add('intro-appear');
-		pin13.classList.remove('intro-appear');
-		pin14.classList.add('intro-appear');
-		pin15.classList.remove('intro-apear');
+		pin12.classList.add('intro-appear');
+		pin9.classList.remove('intro-appear');
+		pin10.classList.remove('intro-appear');
+		pin11.classList.remove('intro-appear');
 	}
 	if (introPosition15 < screenPosition){
 		introText15.classList.add('intro-appear');
-		pin14.classList.remove('intro-appear');
-		pin15.classList.add('intro-appear');
-		pin16.classList.remove('intro-apear');
+		pin9.classList.remove('intro-appear');
+		pin10.classList.remove('intro-appear');
+		pin11.classList.remove('intro-appear');
+		pin12.classList.remove('intro-appear');
 	}
 	if (introPosition16 < screenPosition){
 		introText16.classList.add('intro-appear');
+		pin13.classList.add('intro-appear');
+		pin14.classList.remove('intro-appear');
+		pin15.classList.remove('intro-appear');
+		pin16.classList.remove('intro-appear');
+	}
+	if (introPosition17 < screenPosition){
+		introText17.classList.add('intro-appear');
+		pin14.classList.add('intro-appear');
+		pin13.classList.remove('intro-appear');
+		pin15.classList.remove('intro-appear');
+		pin16.classList.remove('intro-appear');
+	}
+	if (introPosition18 < screenPosition){
+		introText18.classList.add('intro-appear');
+		pin15.classList.add('intro-appear');
+		pin13.classList.remove('intro-appear');
+		pin14.classList.remove('intro-appear');
+		pin16.classList.remove('intro-appear');
+	}
+	if (introPosition19 < screenPosition){
+		introText19.classList.add('intro-appear');
+		pin13.classList.remove('intro-appear');
+		pin14.classList.remove('intro-appear');
 		pin15.classList.remove('intro-appear');
 		pin16.classList.add('intro-appear');
-		pin17.classList.remove('intro-apear');
 	}
-	if (introPosition17 < screenPosition)
-		introText17.classList.add('intro-appear');
-	if (introPosition18 < screenPosition)
-		introText18.classList.add('intro-appear');
-	if (introPosition19 < screenPosition)
-		introText19.classList.add('intro-appear');
-	if (introPosition20 < screenPosition)
+	if (introPosition20 < screenPosition){
 		introText20.classList.add('intro-appear');
+		pin13.classList.remove('intro-appear');
+		pin14.classList.remove('intro-appear');
+		pin15.classList.remove('intro-appear');
+		pin16.classList.remove('intro-appear');
+	}
 	if (headerPosition1 < screenPosition2)
 		headerText1.classList.add('intro-appear');
 	if (headerPosition2 < screenPosition2)
