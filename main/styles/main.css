@@ -196,8 +196,15 @@ svg.head-svg{
 	stroke: black;
 	fill: white;
 	stroke-width:1;
-
 }
+
+
+
+object {
+width: inherit;
+height: inherit;
+}
+
 
 g.tekst-svg{
 	stroke-width: 2;
@@ -278,18 +285,18 @@ path.map-bo{
 }
 
 #about-bo {
-	background-image: linear-gradient(to bottom, #ee7d44, #e8edf3 );
+	background-image: linear-gradient(to bottom, #7cc2d1, #e8edf3 );
 }
 
 #about-pors{
-	background-image: linear-gradient(to bottom, #bccbde, #e8edf3 );
+	background-image: linear-gradient(to bottom, #92edcc , #e8edf3 );
 }
 #about-noto{
-	background-image: linear-gradient(to bottom, #e2e665, #e8edf3 );
+	background-image: linear-gradient(to bottom, #f7ca9d, #e8edf3 );
 }
 
 #about-tinn{
-	background-image: linear-gradient(to bottom, #62d2a2, #e8edf3 );
+	background-image: linear-gradient(to bottom, #f4f2a4, #e8edf3 );
 }
 
 .about-pages div{
