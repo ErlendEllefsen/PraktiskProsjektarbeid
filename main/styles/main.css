@@ -321,24 +321,6 @@ path.map-bo{
 	color: black;
 }
 
-/*.about-pages div:nth-child(1){
-	background-image: linear-gradient(to bottom, #222831, #393e46 );
-}
-
-.about-pages div:nth-child(2){
-	background-image: linear-gradient(to bottom, #393e46, #084c4f);
-}
-
-.about-pages div:nth-child(3){
-	background-image: linear-gradient(to bottom, #084c4f , #0d7377);
-}
-.about-pages div:nth-child(4){
-	background-image: linear-gradient(to bottom, #0d7377, #00adb5);
-}
-.about-pages div:nth-child(5){
-	background-image: linear-gradient(to bottom, #00adb5, #71c9ce);
-}*/
-
 .intro-text-1,		.intro-text-2, 	.intro-text-3, 	.intro-text-4,	.intro-text-5, 
 .intro-text-6, 		.intro-text-7, 	.intro-text-8, 	.intro-text-9, 	.intro-text-10,
 .intro-text-11, 	.intro-text-12, .intro-text-13, .intro-text-14, .intro-text-15, 
