@@ -170,10 +170,6 @@ function drawMap(){
 		Played4=true;
 	}
 
-	
-
-	
-
 }
 
 	window.addEventListener('scroll', drawMap);
