@@ -83,9 +83,9 @@ var Played = false; //Preventing animation to play more than onse onscroll
 var Played2 = false;
 var Played3 = false;
 var Played4 = false;
+var Played5 = false;
 var Played6 = false;
 var Played7 = false;
-var Played8 = false;
 
 
 function drawMap(){ //Draws the svg files
@@ -94,13 +94,18 @@ function drawMap(){ //Draws the svg files
 	var introText6 = document.querySelector('.intro-text-6');
 	var introText11 = document.querySelector('.intro-text-11');
 	var introText16 = document.querySelector('.intro-text-16');
-	var headText1 = document.querySelector('.headtext-bo');
+	var headText1 = document.querySelector('.headtext-porsgrunn');
+	var headText2 = document.querySelector('.headtext-notodden');
+	var headText3 = document.querySelector('.headtext-tinn');
 	var introPosition = introText.getBoundingClientRect().top; //Sets position for variable
 	var introPosition6 = introText6.getBoundingClientRect().top;
 	var introPosition11 = introText11.getBoundingClientRect().top;
 	var introPosition16 = introText16.getBoundingClientRect().top;
 	var headPosition1 = headText1.getBoundingClientRect().top;
+	var headPosition2 = headText2.getBoundingClientRect().top;
+	var headPosition3 = headText3.getBoundingClientRect().top;
 	var animePosition = window.innerHeight / 5; //Sets a triggerpoint in the window height
+	var animePosition2 = window.innerHeight / 2;
 
 	if (!Played && introPosition < animePosition) { 
 
@@ -163,6 +168,54 @@ function drawMap(){ //Draws the svg files
 		});
 
 		Played4=true;
+	}
+
+	if (!Played5 && headPosition1 < animePosition2) {
+
+		function drawAppear5(){
+			document.getElementById("headDrawing2").style.opacity = "1";
+		} window.addEventListener('scroll', drawAppear5);
+		
+		var headDrawing2 = anime({
+    		targets: '#headDrawing2 .lines path',
+    		strokeDashoffset: [anime.setDashoffset, 0],
+    		easing: 'easeInOutSine',
+    		duration: 3000
+		});
+
+		Played5=true;
+	}
+
+	if (!Played6 && headPosition2 < animePosition2) {
+
+		function drawAppear6(){
+			document.getElementById("headDrawing3").style.opacity = "1";
+		} window.addEventListener('scroll', drawAppear6);
+		
+		var headDrawing3 = anime({
+    		targets: '#headDrawing3 .lines path',
+    		strokeDashoffset: [anime.setDashoffset, 0],
+    		easing: 'easeInOutSine',
+    		duration: 3000
+		});
+
+		Played6=true;
+	}
+
+	if (!Played7 && headPosition3 < animePosition2) {
+
+		function drawAppear7(){
+			document.getElementById("headDrawing4").style.opacity = "1";
+		} window.addEventListener('scroll', drawAppear7);
+		
+		var headDrawing4 = anime({
+    		targets: '#headDrawing4 .lines path',
+    		strokeDashoffset: [anime.setDashoffset, 0],
+    		easing: 'easeInOutSine',
+    		duration: 3000
+		});
+
+		Played7=true;
 	}
 
 }

@@ -157,11 +157,31 @@ span{
   	-webkit-filter: blur(2px);
 }
 
-.headtext-bo, .headtext-porsgrunn, .headtext-notodden, .headtext-tinn {
+.headtext-bo{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.headtext-porsgrunn{
+  position: absolute;
+  top: 740%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.headtext-notodden{
+  position: absolute;
+  top: 1430%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+}
+.headtext-tinn{
+  position: absolute;
+  top: 2120%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
 }
 
 /* Svg classes */
@@ -186,7 +206,7 @@ span{
 
 
 
-#lineDrawing, #lineDrawing2, #lineDrawing3, #lineDrawing4 , #headDrawing1{
+#lineDrawing, #lineDrawing2, #lineDrawing3, #lineDrawing4 , #headDrawing1, #headDrawing2, #headDrawing3, #headDrawing4 {
 	opacity: 0;
 }
 
@@ -198,8 +218,17 @@ span{
 
 svg.head-svg{
 	stroke: black;
-	fill: white;
+	fill: #e8edf3;
 	stroke-width:1;
+}
+
+#Layer_2{
+	fill: none;
+}
+
+.stroke{
+	stroke-width:1.7;
+	fill: none;
 }
 
 
