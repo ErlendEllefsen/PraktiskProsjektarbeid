@@ -32,9 +32,24 @@ anime.timeline({loop: false})
 
 
 //Beveger bakgrunnsbildet i takt med musebevegelse.
-$('.bg').mousemove(function(e){
+$('.bg, .box').mousemove(function(e){
 	var moveX = (e.pageX * -1 / 25); //Verdier som bestemmer hyppighet
 	var moveY = (e.pageY * -1 / 25);
 	$(this).css('background-position', moveX + 'px ' + moveY + 'px')
 });
+
+
+
+
+var w=window.innerHeight;
+
+console.log(w);
+var landingText = document.querySelector('.box');
+var landingPosition = landingText.getBoundingClientRect().top;
+var animePosition = window.innerHeight / 5;
+console.log(landingPosition);
+
+
+var Played8 = false;
+
 

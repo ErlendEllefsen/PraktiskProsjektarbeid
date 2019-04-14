@@ -105,7 +105,7 @@ function drawMap(){ //Draws the svg files
 	var headPosition2 = headText2.getBoundingClientRect().top;
 	var headPosition3 = headText3.getBoundingClientRect().top;
 	var animePosition = window.innerHeight / 5; //Sets a triggerpoint in the window height
-	var animePosition2 = window.innerHeight / 2;
+	var animePosition2 = window.innerHeight /2;
 
 	if (!Played && introPosition < animePosition) { 
 
@@ -170,7 +170,7 @@ function drawMap(){ //Draws the svg files
 		Played4=true;
 	}
 
-	if (!Played5 && headPosition1 < animePosition2) {
+	if (!Played5 && headPosition1 < animePosition) {
 
 		function drawAppear5(){
 			document.getElementById("headDrawing2").style.opacity = "1";
@@ -186,7 +186,7 @@ function drawMap(){ //Draws the svg files
 		Played5=true;
 	}
 
-	if (!Played6 && headPosition2 < animePosition2) {
+	if (!Played6 && headPosition2 < animePosition) {
 
 		function drawAppear6(){
 			document.getElementById("headDrawing3").style.opacity = "1";
@@ -202,7 +202,7 @@ function drawMap(){ //Draws the svg files
 		Played6=true;
 	}
 
-	if (!Played7 && headPosition3 < animePosition2) {
+	if (!Played7 && headPosition3 < animePosition) {
 
 		function drawAppear7(){
 			document.getElementById("headDrawing4").style.opacity = "1";
@@ -226,6 +226,7 @@ function drawMap(){ //Draws the svg files
 	function firstDraw(){ //Drawing that happenes onload not onscroll
 
 			document.getElementById("headDrawing1").style.opacity = "1";
+
 		
 		
 		var headDrawing1 = anime({
@@ -568,7 +569,7 @@ function showSlides(t) {
 //Lightbox slutt
 
 
-/* JavaScript for Landingpage (ikke funksjonell, ligger i egen landing.js) */
+/* JavaScript for Landingpage (ikke funksjonell, ligger i egen landing.js) 
 // Wrapper hver eneste bokstav i et span, for å kunne animere en og en bokstav
 $('.animate .letters').each(function(){
   $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letters'>$&</span>"));
@@ -603,4 +604,7 @@ $('.bg').mousemove(function(e){
 	var moveX = (e.pageX * -1 / 25); //Verdier som bestemmer hyppighet
 	var moveY = (e.pageY * -1 / 25);
 	$(this).css('background-position', moveX + 'px ' + moveY + 'px')
-});
+}); */ 
+
+
+

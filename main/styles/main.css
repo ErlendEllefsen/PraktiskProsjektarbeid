@@ -44,7 +44,7 @@ html{
 
 .overlay h1 {
   color: #818181;
-  margin-top: -10vh;
+  margin-top: ;
 }
 
 .overlay a{
@@ -125,7 +125,7 @@ html{
 	color: white;
 }
 
-.link-home, .link-more, .link-about, .link-info, .giga-menu{
+.home-button, .link-home, .link-more, .link-about, .link-info, .giga-menu{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -133,6 +133,16 @@ html{
 	height: 8vh;
 	width: 25%;
 	color: white;
+}
+
+.home-button{
+	width: 10%;
+}
+
+.home-img{
+	margin-left:40%;
+	width: 20%;
+	z-index: 4;
 }
 
 .menu-button{
@@ -153,8 +163,7 @@ span{
 .imgHead > img{
 	width: 100%;
 	height: 100vh;
-	filter: blur(2px);
-  	-webkit-filter: blur(2px);
+	
 }
 
 .headtext-bo{
@@ -206,7 +215,7 @@ span{
 
 
 
-#lineDrawing, #lineDrawing2, #lineDrawing3, #lineDrawing4 , #headDrawing1, #headDrawing2, #headDrawing3, #headDrawing4 {
+#drawLanding, #lineDrawing, #lineDrawing2, #lineDrawing3, #lineDrawing4 , #headDrawing1, #headDrawing2, #headDrawing3, #headDrawing4 {
 	opacity: 0;
 }
 
@@ -222,15 +231,17 @@ svg.head-svg{
 	stroke-width:1;
 }
 
-#Layer_2{
-	fill: none;
-}
+
 
 .stroke{
 	stroke-width:1.7;
 	fill: none;
 }
 
+.stroke-bo{
+	stroke-width:1.5;
+	fill: none;
+}
 
 
 object {
@@ -662,6 +673,38 @@ h1.animate{
 
 .animate .line1 { top: 0; }
 .animate .line2 { bottom: 0; }
+
+.box{
+	position: absolute;
+	width: 100%;
+	height:100vh;
+	display: flex;
+	justify-content: center;
+	align-items: space-between;
+	background-image: url(../pics/landing.jpg);
+	
+	
+}
+
+.box-bo, .box-porsgrunn, .box-notodden, .box-tinn{
+	margin-top:20vh;
+}
+
+
+.lines
+{
+   stroke: black;
+    
+   transition: ease 1s;
+}
+
+.lines:hover 
+{
+
+  stroke: white;
+  
+}
+
 
 
 
