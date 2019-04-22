@@ -30,6 +30,13 @@ anime.timeline({loop: false})
     }
   });
 
+//Indikasjon for å scrolle ned, som skal dukke opp etter noen sek
+$(document).ready(function() {
+$('.scrollned').fadeOut(0);
+$('.scrollned').fadeIn(7000);
+});
+
+
 
 //Beveger bakgrunnsbildet i takt med musebevegelse.
 $('.bg, .box').mousemove(function(e){
