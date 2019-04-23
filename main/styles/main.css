@@ -363,6 +363,23 @@ path.map-bo{
 .about-pages div> h2{
 	font-size: 2.7vw;
 	color: black;
+	margin-bottom: -30%;
+}
+
+#klatreparken-bo{
+	margin-bottom: -10%;
+}
+
+#bratsbergbanen-pors, #oyhopping-pors, #telemarksgalleriet-notoe, #overnatting-noto, #overnatting-tinn{
+	margin-bottom: -20%;
+}
+
+#sjofartsmuseum-pors, #porselensmuseet-pors, #heddal-noto, #tinfos-noto, #sol-tinn, #vemork-tinn{
+	margin-bottom: -25%;
+}
+
+#overnatting-pors, #museum-tinn{
+	margin-bottom: -35%;
 }
 
 .intro-text-1,		.intro-text-2, 	.intro-text-3, 	.intro-text-4,	.intro-text-5, 
