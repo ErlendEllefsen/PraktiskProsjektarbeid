@@ -466,7 +466,6 @@ h2.footerhead{
 .slider img:hover { /* Hvor stor "zoomen" skal være */
 	-moz-transform: scale(1.1); /* for IE 9 */
 	-webkit-transform: scale(1.1); /* for Safari 3-8 */
-	transition: : scale(1.1);
 }
 
 .hover-shadow:hover {
@@ -587,7 +586,7 @@ h2.footerhead{
 }
 
 img.thumb {
-	opacity: 0.6
+	opacity: 0.6;
 	width: 5vw;
 	height: 8vh;
 	padding-bottom: 10px;
@@ -716,7 +715,6 @@ h1.animate{
 	height:100vh;
 	display: flex;
 	justify-content: center;
-	align-items: space-between;
 	background-image: url(../pics/landing.jpg);
 	
 	
