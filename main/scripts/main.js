@@ -552,7 +552,7 @@ function showSlides(t) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("thumb");
-  var captionText = document.getElementById("caption");
+  var captionText = document.getElementById("caption", "caption1", "caption3", "caption4");
   if (t > slides.length) {slideIndex = 1}
   if (t < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
